@@ -6,6 +6,37 @@ const imgWhatWeOffer = "https://www.figma.com/api/mcp/asset/6a8f3644-4c49-4116-b
 const imgHome = "https://www.figma.com/api/mcp/asset/3719fc26-04a0-47e4-a5dd-96604f217e8a";
 
 export default function Home() {
+  const competitionSteps = [
+    {
+      title: 'National Awareness Session',
+      desc: 'Official launch of INSL 2026, introducing the program to university students across Sri Lanka. An expert-led online session engages a wide student audience and encourages inclusive involvement.'
+    },
+    {
+      title: 'Road to INSL Program',
+      desc: 'Prepares participants through awareness and guidance activities before the main competition begins. Builds early understanding of entrepreneurship and strengthens readiness for zonal-level participation.'
+    },
+    {
+      title: 'Zonal Competitions',
+      desc: 'Conducted across four zones covering all IEEE Student Branches in Sri Lanka, with Idea and Business stages. 3 teams per stage from each zone are selected, advancing 24 teams to the Quarter Finals.'
+    },
+    {
+      title: 'Quarter Finals',
+      desc: 'Top 24 teams participate in structured workshops to enhance innovation, business, and pitching skills. Evaluations from Idea and Business stages select 12 teams to progress with assigned mentors.'
+    },
+    {
+      title: 'Semi Final',
+      desc: 'Top 12 teams compete in Idea and Business stages, presenting refined business solutions to judges. The best 6 teams are selected to advance to the Final Pitch stage.'
+    },
+    {
+      title: 'Final Pitch',
+      desc: 'Top 6 teams deliver final refined pitches to a panel of expert judges. One winner will be selected for each stage: Idea Stage and Business Stage.'
+    },
+    {
+      title: 'Investor Lounge',
+      desc: 'Final stage connecting top startups with investors and industry leaders for exposure. Enables networking, funding opportunities, and potential partnerships for scaling ideas.'
+    }
+  ];
+
   return (
     <main className="bg-[#0c0325] min-h-screen w-full overflow-x-hidden">
       {/* Hero Section */}
@@ -142,12 +173,57 @@ export default function Home() {
       </section>
 
       {/* Competition Structure Section */}
-      <section className="relative w-full px-4 sm:px-6 lg:px-[235px] py-12 sm:py-16 md:py-20 lg:py-24 bg-[#0c0325]">
-        <h2 className="text-[#bdafff] text-3xl sm:text-4xl md:text-5xl lg:text-[74.916px] font-bold">
-          COMPETITION STRUCTURE
-        </h2>
+      <section className="relative w-full bg-[#0c0325]">
+        <div className="relative z-20 px-4 sm:px-6 lg:px-[120px] py-12 sm:py-16 md:py-20 lg:py-24">
+          <h2 className="text-[#bdafff] text-3xl sm:text-4xl md:text-5xl lg:text-[74.916px] font-bold text-center">
+            COMPETITION STRUCTURE
+          </h2>
 
-        {/* Structure content would go here */}
+          <p className="text-[#d7cff9] text-center max-w-3xl mx-auto mt-6">
+            A clear progression from awareness to investor connections — designed to prepare, test and scale the best student innovations across Sri Lanka.
+          </p>
+
+          {/* Timeline / Steps */}
+          <div className="mt-12 max-w-[1200px] mx-auto relative">
+            {/* central line for large screens */}
+            <div className="hidden lg:block absolute left-1/2 top-8 bottom-8 w-px bg-gradient-to-b from-transparent via-[#6b4bd1] to-transparent transform -translate-x-1/2" />
+
+            <div className="space-y-12">
+              {competitionSteps.map((step, idx) => (
+                <div
+                  key={step.title}
+                  className={`lg:flex lg:items-start lg:justify-between ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
+                >
+                  {/* Text Card */}
+                  <div className="lg:w-1/2 px-4">
+                    <div className="relative bg-[#1a112a] border border-[rgba(187,171,255,0.06)] rounded-2xl p-6 lg:p-8 shadow-md hover:shadow-lg">
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0">
+                          <div className="w-14 h-14 rounded-full bg-[#8e74f3] flex items-center justify-center text-white font-bold text-lg">
+                            {idx + 1}
+                          </div>
+                        </div>
+                        <div className="ml-4">
+                          <h3 className="text-white text-lg sm:text-xl font-semibold">
+                            {step.title}
+                          </h3>
+                          <p className="text-[#d7cff9] mt-2 text-sm sm:text-base leading-relaxed">
+                            {step.desc}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    {/* connector dot on large screens */}
+                    <div className={`hidden lg:block absolute ${idx % 2 === 0 ? 'left-[calc(50%_-_8px)]' : 'left-[calc(50%_-_8px)]'} top-[calc(50%_-_6px)]`} aria-hidden />
+                  </div>
+
+                  {/* Visual/Placeholder Card */}
+              
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
