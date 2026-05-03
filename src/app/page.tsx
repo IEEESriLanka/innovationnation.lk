@@ -64,6 +64,18 @@ export default function Home() {
 
         {/* Hero Content */}
         <div className="relative z-10 w-full px-4 sm:px-6 lg:px-[100px] flex flex-col justify-end min-h-[400px] md:min-h-[600px] lg:min-h-[868px]">
+          {/* Logo aligned with content padding */}
+          <div className="mb-auto mt-25">
+            <Image
+              src="/logo.png"
+              alt="INSL logo"
+              width={160}
+              height={56}
+              className="w-24 sm:w-28 md:w-32 lg:w-40 object-contain"
+              priority
+            />
+          </div>
+
           <h3 className="text-[#8e74f3] text-2xl sm:text-3xl md:text-4xl lg:text-[65.043px] font-semibold mb-2 sm:mb-3 md:mb-4">
             IEEE
           </h3>
