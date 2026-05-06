@@ -323,7 +323,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Official Partners Section */}
+      <section className="relative w-full bg-[#0c0325] py-16 sm:py-24 lg:py-32 flex flex-col items-center justify-center">
+        <h2 className="text-[#e9c7ff] text-3xl sm:text-5xl md:text-[52px] font-bold leading-tight tracking-wide mb-16 sm:mb-20 text-center">
+          OFFICIAL PARTNERS
+        </h2>
 
+        <div className="flex flex-col items-center space-y-20 sm:space-y-24 w-full px-4">
+          {/* Organized By */}
+          <div className="flex flex-col items-center space-y-8 sm:space-y-10 w-full">
+            <h3 className="text-white text-xl sm:text-2xl lg:text-[28px] font-medium tracking-wide">
+              Organized by
+            </h3>
+            <div className="relative w-64 sm:w-80 md:w-96 lg:w-[450px] h-24 sm:h-32 lg:h-40">
+              <Image
+                src="/ypsl-logo-white.png"
+                alt="IEEE Young Professionals Sri Lanka"
+                fill
+                className="object-contain"
+                unoptimized
+              />
+            </div>
+          </div>
+
+          {/* Investment Partner */}
+          <div className="flex flex-col items-center space-y-8 sm:space-y-10 w-full">
+            <h3 className="text-white text-xl sm:text-2xl lg:text-[28px] font-medium tracking-wide">
+              Investment Partner
+            </h3>
+            <div className="bg-white px-6 py-6 sm:px-10 sm:py-8 w-72 sm:w-96 md:w-[450px] lg:w-[500px] flex items-center justify-center">
+              <div className="relative w-full h-24 sm:h-32 lg:h-40">
+                <Image
+                  src="/lan-logo-full.png"
+                  alt="Lankan Angel Network"
+                  fill
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
