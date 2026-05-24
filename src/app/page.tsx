@@ -45,6 +45,29 @@ export default function Home() {
     }
   ];
 
+  const teamMembers = [
+    {
+      name: 'Hasidu Fernando',
+      role: 'Chair',
+      organization: 'IEEE Innovation Nation Sri Lanka 2026',
+      phone: '(+94) 70 144 0168',
+      email: 'hasidu.chamoditha234@gmail.com',
+      image:
+        '/hasidu.png',
+      imagePosition: 'center 20%',
+    },
+    {
+      name: 'Shafkhan Mohammed',
+      role: 'Program Vice Chair',
+      organization: 'IEEE Innovation Nation Sri Lanka 2026',
+      phone: '(+94) 76 450 5146',
+      email: 'shafkhan@ieee.org',
+      image:
+        '/shafkan.png',
+      imagePosition: 'center 15%',
+    },
+  ];
+
   return (
     <main className="bg-[#0c0325] min-h-screen w-full overflow-x-hidden">
       {/* Hero Section */}
@@ -396,6 +419,58 @@ export default function Home() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Team Section */}
+      <section className="relative w-full overflow-hidden bg-[#0c0325] py-16 sm:py-24 lg:py-32">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-19">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-[#bc71ff] text-sm sm:text-base font-semibold uppercase tracking-[0.3em]">
+              Meet the Team
+            </p>
+            <h2 className="mt-4 text-[#e9c7ff] text-3xl sm:text-5xl md:text-[52px] font-bold leading-tight tracking-wide">
+              PEOPLE BEHIND INSL 2026
+            </h2>
+         
+          </div>
+
+          <div className="mt-14 grid gap-8 md:grid-cols-2">
+            {teamMembers.map((member) => (
+              <article
+                key={member.name}
+                className="overflow-hidden border border-[#5e46b4]/50 bg-[#150d2c]"
+              >
+                <div className="grid md:grid-cols-[14rem_1fr]">
+                  <div className="relative aspect-[4/3] md:aspect-auto md:min-h-full overflow-hidden bg-[#20133f]">
+                    <Image
+                      src={member.image}
+                      alt={`${member.name} portrait`}
+                      fill
+                      sizes="(max-width: 767px) 100vw, 320px"
+                      className="object-cover"
+                      style={{ objectPosition: member.imagePosition }}
+                    />
+                  </div>
+
+                  <div className="p-6 sm:p-8 lg:p-10">
+                    <p className="text-[#bc71ff] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">
+                      {member.role}
+                    </p>
+                    <h3 className="mt-3 text-white text-2xl sm:text-3xl font-bold leading-tight">
+                      {member.name}
+                    </h3>
+
+
+                    <div className="mt-6 space-y-4 border-t border-white/10 pt-5 text-sm sm:text-base text-white/90">
+                      <p>{member.phone}</p>
+                      <p className="break-all">{member.email}</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
