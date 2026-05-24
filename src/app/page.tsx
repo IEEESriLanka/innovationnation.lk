@@ -2,6 +2,16 @@ import Image from "next/image";
 
 // Figma asset URLs - valid for 7 days
 const imgWhatWeOffer = "/final-pitch.jpg";
+const slideshowImages = [
+  "/slideshow/1.jpg",
+  "/slideshow/2.jpg",
+  "/slideshow/3.jpg",
+  "/slideshow/4.jpg",
+  "/slideshow/5.jpg",
+  "/slideshow/6.jpg",
+  "/slideshow/7.jpg",
+  "/slideshow/8.jpg",
+];
 
 export default function Home() {
   const competitionSteps = [
@@ -38,30 +48,28 @@ export default function Home() {
   return (
     <main className="bg-[#0c0325] min-h-screen w-full overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative w-full h-screen">
-        {/* Background Images */}
-        <div className="absolute -top-25 w-full h-auto min-h-100 md:min-h-150 lg:min-h-217 overflow-hidden">
-          <Image
-            src="/rectangle137.png"
-            alt="Hero background"
-            fill
-            className="object-cover"
-            priority
-
-          />
+      <section className="hero-slideshow relative w-full min-h-screen overflow-hidden">
+        {/* Background Slideshow */}
+        <div className="absolute inset-0 overflow-hidden">
+          {slideshowImages.map((src, index) => (
+            <Image
+              key={src}
+              src={src}
+              alt="Hero background"
+              fill
+              sizes="100vw"
+              className="hero-slideshow-image object-cover"
+              style={{ animationDelay: `${index * 4}s` }}
+              priority={index === 0}
+            />
+          ))}
         </div>
 
         {/* Gradient Overlay */}
-        <div
-          className="absolute inset-0 w-full h-auto min-h-100 md:min-h-150 lg:min-h-217"
-          style={{
-            backgroundImage:
-              'linear-gradient(180deg, rgba(75, 50, 168, 0.1) 30%, rgba(61, 41, 138, 0.6) 40%, rgba(49, 32, 109, 0.8) 55%, rgba(41, 28, 93, 0.95) 75%, rgb(35, 23, 78) 100%, rgb(29, 20, 66) 100%)',
-          }}
-        />
+        <div className="hero-slideshow-overlay absolute inset-0" />
 
         {/* Hero Content */}
-        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-25 flex flex-col justify-end min-h-100 md:min-h-150 lg:min-h-217">
+        <div className="relative z-10 flex min-h-screen w-full flex-col justify-end px-4 sm:px-6 lg:px-25">
           {/* Logo aligned with content padding */}
           <div className="mb-auto mt-25">
             <Image
@@ -73,7 +81,7 @@ export default function Home() {
               priority
             />
           </div>
-
+<div className="mb-[5%]">
           <h3 className="text-[#8e74f3] text-2xl sm:text-3xl md:text-4xl lg:text-[65.043px] font-semibold mb-2 sm:mb-3 md:mb-4">
             IEEE
           </h3>
@@ -83,6 +91,8 @@ export default function Home() {
           <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-[103.361px] font-bold">
             SRI LANKA
           </h2>
+</div>
+
         </div>
       </section>
 
@@ -317,10 +327,10 @@ export default function Home() {
                   IDEA STAGE
                 </h3>
                 <div className="space-y-4 text-white/95 text-[1rem]  font-semibold tracking-wider leading-loose">
-                  <p>HAVE AN IDEA BUT HAVEN'T STARTED DEVELOPING YET?</p>
+                  <p>HAVE AN IDEA BUT HAVEN&apos;T STARTED DEVELOPING YET?</p>
                   <p>JOIN THE IDEA STAGE,</p>
                   <p>WE WILL HELP YOU AND TURN YOUR CONCEPT INTO REALITY.</p>
-                  <p>JUST BRING YOUR IDEA AND LET'S BUILD IT TOGETHER.</p>
+                  <p>JUST BRING YOUR IDEA AND LET&apos;S BUILD IT TOGETHER.</p>
                 </div>
               </div>
             </div>
@@ -336,10 +346,10 @@ export default function Home() {
                   BUSINESS STAGE
                 </h3>
                 <div className="space-y-4 text-white/95 text-[1rem]  font-semibold tracking-wider leading-loose">
-                  <p>HAVE AN IDEA BUT HAVEN'T STARTED DEVELOPING YET?</p>
+                  <p>HAVE AN IDEA BUT HAVEN&apos;T STARTED DEVELOPING YET?</p>
                   <p>JOIN THE IDEA STAGE,</p>
                   <p>WE WILL HELP YOU AND TURN YOUR CONCEPT INTO REALITY.</p>
-                  <p>JUST BRING YOUR IDEA AND LET'S BUILD IT TOGETHER.</p>
+                  <p>JUST BRING YOUR IDEA AND LET&apos;S BUILD IT TOGETHER.</p>
                 </div>
               </div>
             </div>
