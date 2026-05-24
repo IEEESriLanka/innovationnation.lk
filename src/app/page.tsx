@@ -1,9 +1,7 @@
 import Image from "next/image";
 
 // Figma asset URLs - valid for 7 days
-const img92 = "https://www.figma.com/api/mcp/asset/66e0e356-35e2-4413-960d-d54b88c6a1f3";
-const imgWhatWeOffer = "https://www.figma.com/api/mcp/asset/6a8f3644-4c49-4116-b347-dd3262b6cb09";
-const imgHome = "https://www.figma.com/api/mcp/asset/3719fc26-04a0-47e4-a5dd-96604f217e8a";
+const imgWhatWeOffer = "/final-pitch.jpg";
 
 export default function Home() {
   const competitionSteps = [
@@ -139,35 +137,50 @@ export default function Home() {
             {[
               {
                 title: 'Competition',
-                description: 'To recognize achievements, talents, and innovative ideas at a national level'
+                description: 'To recognize achievements, talents, and innovative ideas at a national level',
+                image: '/offers/competition.jpg'
               },
               {
                 title: 'Workshops',
-                description: ''
+                description: '',
+                image: '/offers/workshops.jpg'
               },
               {
                 title: 'Innovation & Entrepreneurship',
-                description: ''
+                description: '',
+                image: '/offers/innovation.jpg'
               },
               {
                 title: 'Pitch Deck Mastery',
-                description: ''
+                description: '',
+                image: '/offers/pitch-deck.jpg'
               },
               {
                 title: 'Mentoring Sessions',
-                description: 'One-on-one sessions with industry experts and domain specialists'
+                description: 'One-on-one sessions with industry experts and domain specialists',
+                image: '/offers/mentoring.jpg'
               },
               {
                 title: 'Investment Opportunities',
-                description: 'Access to investor networking and investor lounge opportunities'
+                description: 'Access to investor networking and investor lounge opportunities',
+                image: '/offers/investment.jpg'
               },
               {
                 title: 'Weekly Deal Show',
-                description: 'Potential competitors with fundable pitches will get the opportunity to feature in the Weekly Deal Show'
+                description: 'Potential competitors with fundable pitches will get the opportunity to feature in the Weekly Deal Show',
+                image: '/offers/deal-show.jpg'
               }
             ].map((item, index) => (
               <div key={index} className="bg-[#4b32a8] overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
-                <div className="h-32 sm:h-40 md:h-48 lg:h-62.25 bg-linear-to-b from-[#5c42c0] to-[#4b32a8] shrink-0" />
+                <div className="relative h-32 sm:h-40 md:h-48 lg:h-62.25 shrink-0">
+                  <Image
+                    src={item.image}
+                    alt={`${item.title} background`}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#4b32a8]/45 via-[#4b32a8]/15 to-transparent" />
+                </div>
                 <div className="p-4 sm:p-5 md:p-6 flex-1 flex flex-col justify-end">
                   <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl lg:text-[25.168px] mb-3 sm:mb-4">
                     {item.title}
@@ -196,44 +209,55 @@ export default function Home() {
           </p>
 
           {/* Timeline / Steps */}
-          <div className="mt-12 max-w-300 mx-auto relative">
-            {/* central line for large screens */}
-            <div className="hidden lg:block absolute left-1/2 top-8 bottom-8 w-px bg-linear-to-b from-transparent via-[#6b4bd1] to-transparent transform -translate-x-1/2" />
-
-            <div className="space-y-12">
-              {competitionSteps.map((step, idx) => (
-                <div
-                  key={step.title}
-                  className={`lg:flex lg:items-start lg:justify-between ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
-                >
-                  {/* Text Card */}
-                  <div className="lg:w-1/2 px-4">
-                    <div className="relative bg-[#1a112a] border border-[rgba(187,171,255,0.06)] rounded-2xl p-6 lg:p-8 shadow-md hover:shadow-lg">
-                      <div className="flex items-start">
-                        <div className="shrink-0">
-                          <div className="w-14 h-14 rounded-full bg-[#8e74f3] flex items-center justify-center text-white font-bold text-lg">
-                            {idx + 1}
-                          </div>
+          <div className="mt-14 mx-auto">
+            <div className="overflow-x-auto pb-4 [scrollbar-width:thin] [scrollbar-color:#5d45b6_transparent]">
+              <div className="min-w-[1120px] px-2 sm:px-4">
+                <div className="grid grid-cols-7 grid-rows-[minmax(220px,1fr)_84px_minmax(220px,1fr)] gap-x-4 sm:gap-x-5 lg:gap-x-6">
+                  {competitionSteps.map((step, idx) => (
+                    <article
+                      key={`top-${step.title}`}
+                      className={`${idx % 2 === 0 ? 'row-start-1' : 'row-start-3'} self-stretch snap-center`}
+                      style={{ gridColumnStart: idx + 1 }}
+                    >
+                      <div className="relative h-full  border border-[#5e46b4]/45 bg-[#1a1135] px-4 py-5 sm:px-5 sm:py-6">
+                        <div className="absolute right-3 top-1 text-[60px] sm:text-[68px] font-black leading-none text-[#6a51cd]/20 select-none">
+                          {String(idx + 1).padStart(2, "0")}
                         </div>
-                        <div className="ml-4">
-                          <h3 className="text-white text-lg sm:text-xl font-semibold">
+
+                        <div className="relative z-10">
+                          
+
+                          <h3 className="mt-3 text-white text-base sm:text-lg font-semibold leading-snug">
                             {step.title}
                           </h3>
-                          <p className="text-[#d7cff9] mt-2 text-sm sm:text-base leading-relaxed">
+
+                          <p className="mt-2 text-[#d7cff9] text-xs sm:text-sm leading-relaxed">
                             {step.desc}
                           </p>
                         </div>
                       </div>
+                    </article>
+                  ))}
+
+                  {competitionSteps.map((step, idx) => (
+                    <div
+                      key={`mid-${step.title}`}
+                      className="relative row-start-2 flex items-center justify-center"
+                      style={{ gridColumnStart: idx + 1 }}
+                    >
+                      {idx > 0 && <span className="absolute left-0 right-1/2 h-px bg-[#6e52cf]/70" aria-hidden />}
+                      {idx < competitionSteps.length - 1 && <span className="absolute left-1/2 right-0 h-px bg-[#6e52cf]/70" aria-hidden />}
+
+                      <div className="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border border-[#bdafff]/70 bg-[#2b1d59]" aria-hidden>
+                        <div className="h-2.5 w-2.5 rounded-full bg-[#bdafff]" />
+                      </div>
                     </div>
-                    {/* connector dot on large screens */}
-                    <div className={`hidden lg:block absolute ${idx % 2 === 0 ? 'left-[calc(50%-8px)]' : 'left-[calc(50%-8px)]'} top-[calc(50%-6px)]`} aria-hidden />
-                  </div>
-
-                  {/* Visual/Placeholder Card */}
-
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
+
+       
           </div>
         </div>
       </section>
@@ -273,7 +297,7 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-19">
+        <div className="relative z-10 mx-[6%] px-10 sm:px-6 lg:px-19">
           {/* Main title */}
           <div className="mb-20 sm:mb-32 text-center">
             <h2 className="text-[#e9c7ff] text-3xl sm:text-5xl md:text-[52px] font-bold leading-tight tracking-wide">
@@ -289,10 +313,10 @@ export default function Home() {
               <div className="absolute left-2 sm:left-4 top-6 h-8.5 w-8.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#531b81]"></div>
 
               <div className="pl-12 sm:pl-20">
-                <h3 className="text-[#bc71ff] text-[5rem] font-black mb-8 tracking-wide">
+                <h3 className="text-[#bc71ff] text-[2.5rem] font-black mb-8 tracking-wide">
                   IDEA STAGE
                 </h3>
-                <div className="space-y-4 text-white/95 text-[1.5rem]  font-semibold tracking-wider leading-loose">
+                <div className="space-y-4 text-white/95 text-[1rem]  font-semibold tracking-wider leading-loose">
                   <p>HAVE AN IDEA BUT HAVEN'T STARTED DEVELOPING YET?</p>
                   <p>JOIN THE IDEA STAGE,</p>
                   <p>WE WILL HELP YOU AND TURN YOUR CONCEPT INTO REALITY.</p>
@@ -302,16 +326,16 @@ export default function Home() {
             </div>
 
             {/* Business Stage */}
-            <div className="relative w-full mt-10">
+            <div className="relative w-full mt-5">
               {/* Right Line & Dot */}
               <div className="absolute right-2 sm:right-4 -top-25 -bottom-25 w-0.75 bg-[#531b81]"></div>
               <div className="absolute right-2 sm:right-4 top-6 h-8.5 w-8.5 translate-x-1/2 -translate-y-1/2 rounded-full bg-[#531b81]"></div>
 
               <div className="pr-12 sm:pr-20 text-right">
-                <h3 className="text-[#bc71ff]  text-[5rem] font-black mb-8 tracking-wide">
+                <h3 className="text-[#bc71ff]  text-[2.5rem] font-black mb-8 tracking-wide">
                   BUSINESS STAGE
                 </h3>
-                <div className="space-y-4 text-white/95 text-[1.5rem]  font-semibold tracking-wider leading-loose">
+                <div className="space-y-4 text-white/95 text-[1rem]  font-semibold tracking-wider leading-loose">
                   <p>HAVE AN IDEA BUT HAVEN'T STARTED DEVELOPING YET?</p>
                   <p>JOIN THE IDEA STAGE,</p>
                   <p>WE WILL HELP YOU AND TURN YOUR CONCEPT INTO REALITY.</p>
