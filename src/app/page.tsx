@@ -1,7 +1,8 @@
 "use client";
 
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 // Figma asset URLs
 const imgWhatWeOffer = "/final-pitch.jpg";
@@ -107,6 +108,49 @@ const offers = [
 ];
 
 export default function Home() {
+  const [activeOffer, setActiveOffer] = useState(0);
+
+  const containerRef = useRef<HTMLElement>(null);
+  const imagesRef = useRef<HTMLImageElement[]>([]);
+
+  useEffect(() => {
+    let imageIndex = 0;
+    let lastPos = { x: 0, y: 0 };
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const { clientX, clientY } = e;
+      const distance = Math.hypot(clientX - lastPos.x, clientY - lastPos.y);
+
+      if (distance > 80) {
+        lastPos = { x: clientX, y: clientY };
+
+        const img = imagesRef.current[imageIndex % imagesRef.current.length];
+        if (img) {
+          img.style.left = `${clientX}px`;
+          img.style.top = `${clientY}px`;
+
+          // trigger reflow to restart animation
+          img.classList.remove('trail-animate');
+          void img.offsetWidth;
+          img.classList.add('trail-animate');
+
+          imageIndex++;
+        }
+      }
+    };
+
+    const container = containerRef.current;
+    if (container) {
+      container.addEventListener('mousemove', handleMouseMove as any);
+    }
+
+    return () => {
+      if (container) {
+        container.removeEventListener('mousemove', handleMouseMove as any);
+      }
+    };
+  }, []);
+
   return (
     <main className="bg-[#0c0325] min-h-screen w-full overflow-x-hidden text-white selection:bg-[#bc71ff] selection:text-white">
 
@@ -124,7 +168,7 @@ export default function Home() {
           <a href="#" className="hover:text-white transition-colors">Home</a>
           <a href="#" className="hover:text-white transition-colors">About Us</a>
           <a href="#" className="hover:text-white transition-colors">Events</a>
-          <a href="#" className="hover:text-white transition-colors">Pages</a>
+          <a href="#" className="hover:text-white transition-colors">Partners</a>
         </nav>
 
       </header>
@@ -146,7 +190,7 @@ export default function Home() {
         <div className="absolute inset-0 w-full h-full bg-[#0c0325]/30" />
 
         {/* Blend into next section's background color */}
-        <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-[#4b32a8] via-[#4b32a8]/80 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-[#0c0325] via-[#0c0325]/80 to-transparent" />
 
         <div className="w-full flex flex-col z-10 relative">
           <motion.h1
@@ -165,107 +209,216 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Us Section (Reference 2 style) */}
-      <section className="relative w-full bg-[#0c0325]">
-        {/* Solid Top Background */}
-        <div className="absolute top-0 left-0 w-full h-[60%] bg-[#4b32a8]" />
+      {/* About Us Section */}
+      <section ref={containerRef} className="relative w-full bg-[#0c0325] py-30 md:py-30 overflow-hidden cursor-crosshair">
+        {/* Style for Image Trail */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+          .trail-image {
+            position: fixed;
+            width: 140px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.8);
+            z-index: 40;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+            will-change: transform, opacity, left, top;
+          }
+          .trail-animate {
+            animation: trailFade 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          }
+          @keyframes trailFade {
+            0% { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(calc(-10deg + 20deg * var(--rand))); }
+            100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8) rotate(calc(-10deg + 20deg * var(--rand))); }
+          }
+        `}} />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 pt-20">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16">
-            <h2 className="text-4xl md:text-6xl font-semibold text-white relative">
-              {/* Subtle text glow behind */}
-              <span className="absolute inset-0 bg-[#bc71ff] blur-xl opacity-20 -z-10 rounded-full" />
-              About INSL
-            </h2>
-            <p className="text-white/90 text-lg md:text-xl font-light max-w-xl leading-relaxed">
-              Innovation Nation Sri Lanka is an ecosystem that aims to build an innovation and entrepreneurial culture among Sri Lankan university students.
-            </p>
+        {/* Trail Images Array */}
+        {slideshowImages.map((src, i) => (
+          <img
+            key={i}
+            src={src}
+            ref={el => { if (el) imagesRef.current[i] = el; }}
+            className="trail-image"
+            style={{ '--rand': Math.random() } as React.CSSProperties}
+            alt=""
+          />
+        ))}
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 lg:px-24">
+          <div className="flex flex-col gap-6 md:gap-4">
+
+            {/* Line 1 */}
+            <div className="flex justify-start">
+              <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight text-white/20">
+                <span className="text-[#bc71ff] font-bold">build</span> an innovation
+              </h2>
+            </div>
+
+            {/* Line 2 */}
+            <div className="flex justify-center">
+              <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight text-white/20 text-center">
+                and entrepreneurial <span className="text-[#bc71ff] font-bold">culture</span>
+              </h2>
+            </div>
+
+            {/* Line 3 */}
+            <div className="flex justify-end">
+              <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight text-white/20 text-right">
+                <span className="text-[#bc71ff] font-bold">among</span> university students
+              </h2>
+            </div>
+
           </div>
 
-          {/* Large Center Image Bridging Backgrounds */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="w-full relative aspect-[16/9] rounded-[2rem] overflow-hidden shadow-[0_30px_60px_rgba(12,3,37,0.6)]"
-          >
-            <Image
-              src="/intro.png"
-              alt="Innovation Nation Sri Lanka"
-              fill
-              className="object-cover"
-              unoptimized
-            />
-          </motion.div>
+          {/* Subtext blocks */}
+          <div className="mt-24 md:mt-32 grid md:grid-cols-2 gap-16 items-end">
+            <div className="flex items-start gap-4 md:gap-6 max-w-sm">
+              <div className="w-12 md:w-16 h-px bg-[#bc71ff] mt-2.5 md:mt-3 shrink-0" />
+              <p className="text-white/60 text-sm md:text-base leading-relaxed">
+                Join hundreds of students who have transformed their ideas into reality through our nation-wide ecosystem.
+              </p>
+            </div>
+
+            <div className="flex items-start gap-4 md:gap-6 max-w-sm justify-self-end text-right flex-row-reverse">
+              <div className="w-12 md:w-16 h-px bg-[#bc71ff] mt-2.5 md:mt-3 shrink-0" />
+              <p className="text-white/60 text-sm md:text-base leading-relaxed">
+                Much more than just a competition. This is a complete toolkit for succeeding in entrepreneurship.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* What Does INSL Offer Section (Clean Grid) */}
-      <section className="relative w-full py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-[#0c0325]">
-        <div className="max-w-7xl mx-auto">
+      {/* What Does INSL Offer Section (Accordion Gallery) */}
+      <section className="relative w-full py-24 md:py-32 bg-[#0c0325] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 mb-12">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-semibold mb-16 text-[#bdafff]"
+            className="text-3xl md:text-5xl font-semibold text-[#bdafff]"
           >
             What Does INSL Offer?
           </motion.h2>
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-            {offers.map((item, index) => (
+        <div className="w-full flex flex-col md:flex-row h-[800px] md:h-[600px] shadow-[0_0_50px_rgba(12,3,37,0.8)]">
+          {offers.map((item, index) => {
+            const isActive = activeOffer === index;
+            return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-[#150d2c] rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300 border border-white/5"
+                className="relative cursor-pointer overflow-hidden border-b md:border-b-0 md:border-r border-white/10 last:border-0 group"
+                onClick={() => setActiveOffer(index)}
+                animate={{
+                  flex: isActive ? "5 1 0%" : "1 1 0%"
+                }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
               >
-                <div className="relative h-48 w-full overflow-hidden">
+                {/* Background Image & Overlays */}
+                <div className="absolute inset-0 w-full h-full">
                   <Image
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#150d2c] to-transparent opacity-80" />
+                  {/* Inactive overlay */}
+                  <div className={`absolute inset-0 transition-opacity duration-500 ${isActive ? 'opacity-0' : 'opacity-100'} bg-[#0c0325]/80 group-hover:bg-[#0c0325]/60`} />
+
+                  {/* Active overlay (Purple gradient) */}
+                  <div className={`absolute inset-0 transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-0'} bg-gradient-to-r from-[#4b32a8]/90 via-[#4b32a8]/50 to-transparent`} />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
-                  {item.description && (
-                    <p className="text-[#d7cff9]/70 text-sm leading-relaxed">{item.description}</p>
-                  )}
+
+                {/* Content */}
+                <div className="relative w-full h-full flex flex-col md:flex-row items-center justify-center">
+                  <AnimatePresence>
+                    {isActive ? (
+                      <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -20 }}
+                        transition={{ delay: 0.2, duration: 0.4 }}
+                        className="absolute inset-0 p-8 md:p-12 lg:p-16 flex flex-col justify-center"
+                      >
+                        <h3 className="text-3xl md:text-5xl font-bold text-white mb-4 uppercase tracking-wider">{item.title}</h3>
+                        <div className="w-16 h-1 bg-[#bc71ff] mb-6" />
+                        {item.description && (
+                          <p className="text-white/90 text-sm md:text-lg font-light leading-relaxed max-w-md">
+                            {item.description}
+                          </p>
+                        )}
+                      </motion.div>
+                    ) : (
+                      <>
+                        {/* Desktop Inactive Text (Vertical) */}
+                        <div className="hidden md:flex absolute inset-0 items-end justify-center pb-12">
+                          <h3
+                            className="text-white/80 font-bold text-xl uppercase tracking-widest whitespace-nowrap group-hover:text-white transition-colors"
+                            style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
+                          >
+                            {item.title}
+                          </h3>
+                        </div>
+                        {/* Mobile Inactive Text (Horizontal) */}
+                        <div className="flex md:hidden absolute inset-0 items-center justify-center">
+                          <h3 className="text-white/80 font-bold text-sm uppercase tracking-widest whitespace-nowrap group-hover:text-white transition-colors">
+                            {item.title}
+                          </h3>
+                        </div>
+                      </>
+                    )}
+                  </AnimatePresence>
                 </div>
               </motion.div>
-            ))}
-          </div>
+            )
+          })}
         </div>
       </section>
 
-      {/* Competition Structure Section (Clean List) */}
-      <section className="relative w-full py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-[#0c0325] border-t border-white/5">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
-          <div className="lg:w-1/3">
+      {/* Competition Structure Section */}
+      <section className="relative w-full py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-[#0c0325] border-t border-white/5 overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-32 relative">
+
+          {/* Mobile/Tablet heading */}
+          <div className="lg:hidden mb-4">
             <motion.h2
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-5xl font-semibold mb-6 text-white sticky top-24"
+              className="text-4xl md:text-5xl font-bold text-white uppercase tracking-wider"
             >
               Competition Structure
             </motion.h2>
           </div>
 
-          <div className="lg:w-2/3 flex flex-col gap-10">
+          {/* Huge Vertical Heading for Desktop */}
+          <div className="hidden lg:flex w-auto shrink-0 relative items-stretch">
+            <motion.h2
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-[4rem] xl:text-[6rem] 2xl:text-[6rem] font-black uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#bc71ff] to-[#4b32a8] whitespace-nowrap sticky top-32 leading-none"
+              style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
+            >
+              Structure <br />
+              Competition
+            </motion.h2>
+          </div>
+
+          <div className="flex-1 flex flex-col gap-10 ">
             {competitionSteps.map((step, idx) => (
               <motion.div
                 key={step.title}
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-15% 0px -15% 0px" }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
                 className="flex gap-6 md:gap-8 group"
               >
                 <div className="text-2xl md:text-3xl font-light text-[#4b32a8] group-hover:text-[#bc71ff] transition-colors mt-1">
@@ -323,32 +476,34 @@ export default function Home() {
           <h2 className="text-2xl md:text-4xl font-semibold text-center mb-16 text-white">
             Official Partners
           </h2>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-32">
-            <div className="flex flex-col items-center">
-              <p className="text-[#bc71ff] text-sm uppercase tracking-widest mb-6">Organized by</p>
-              <div className="relative w-48 md:w-64 h-20 opacity-80 hover:opacity-100 transition-opacity">
-                <Image
-                  src="/ypsl-logo-white.png"
-                  alt="IEEE Young Professionals Sri Lanka"
-                  fill
-                  className="object-contain"
-                  unoptimized
-                />
+          <div className="flex flex-wrap justify-center items-start gap-12 md:gap-16">
+            {[
+              { files: ['organized-by.png'], title: 'Organized By' },
+              { files: ['investment-partner.png'], title: 'Investment Partner', bgWhite: true },
+              { files: ['official-digital-media-partner.png'], title: 'Official Digital Media Partner' },
+              { files: ['regional-partner-1.png', 'regional-partner-2.png', 'regional-partner-3.png'], title: 'Regional Partners' }
+            ].map((partnerGroup, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                <div className="h-12 flex items-end mb-6">
+                  <p className="text-[#bc71ff] text-xs md:text-sm uppercase tracking-widest text-center">
+                    {partnerGroup.title}
+                  </p>
+                </div>
+                <div className="flex gap-8 items-center justify-center flex-wrap">
+                  {partnerGroup.files.map((file, fileIdx) => (
+                    <div key={fileIdx} className={`relative w-40 md:w-48 h-20 opacity-80 hover:opacity-100 transition-opacity ${partnerGroup.bgWhite ? 'bg-white rounded-xl p-4' : ''}`}>
+                      <Image
+                        src={`/partners/${file}`}
+                        alt={`${partnerGroup.title} ${fileIdx + 1}`}
+                        fill
+                        className="object-contain"
+                        unoptimized
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="w-full md:w-px h-px md:h-24 bg-white/10" />
-            <div className="flex flex-col items-center">
-              <p className="text-[#bc71ff] text-sm uppercase tracking-widest mb-6">Investment Partner</p>
-              <div className="relative w-48 md:w-64 h-20 bg-white rounded-xl p-4">
-                <Image
-                  src="/lan-logo-full.png"
-                  alt="Lankan Angel Network"
-                  fill
-                  className="object-contain p-2"
-                  unoptimized
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -411,6 +566,56 @@ export default function Home() {
 
         </div>
       </section>
+
+      {/* Footer Section */}
+      <footer className="relative w-full bg-[#0c0325] pt-20 pb-10 px-6 md:px-16 lg:px-24 border-t border-[#bc71ff]/20">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16 md:gap-8">
+          
+          {/* Brand/Logo Area */}
+          <div className="flex flex-col gap-6 max-w-sm">
+            <Image
+              src="/logo.png"
+              alt="INSL logo"
+              width={160}
+              height={56}
+              className="object-contain opacity-90"
+            />
+            <p className="text-[#d7cff9]/60 font-light text-sm leading-relaxed">
+              Empowering the next generation of Sri Lankan entrepreneurs. Join us in building a nation of innovation.
+            </p>
+          </div>
+
+          {/* Links Area */}
+          <div className="flex flex-wrap gap-16 lg:gap-32">
+            <div className="flex flex-col gap-5">
+              <h4 className="text-white font-bold tracking-[0.2em] uppercase text-xs mb-2">Explore</h4>
+              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Home</a>
+              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">About Us</a>
+              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Events</a>
+              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Partners</a>
+            </div>
+
+            <div className="flex flex-col gap-5">
+              <h4 className="text-white font-bold tracking-[0.2em] uppercase text-xs mb-2">Connect</h4>
+              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Contact Us</a>
+              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Facebook</a>
+              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">LinkedIn</a>
+              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-white/30 text-xs font-light tracking-wide">
+            &copy; {new Date().getFullYear()} IEEE Innovation Nation Sri Lanka. All rights reserved.
+          </p>
+          <div className="flex items-center gap-8 text-white/30 text-xs font-light tracking-wide">
+            <a href="#" className="hover:text-[#bc71ff] transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-[#bc71ff] transition-colors">Terms of Service</a>
+          </div>
+        </div>
+      </footer>
 
     </main>
   );
