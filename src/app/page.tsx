@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Figma asset URLs
@@ -156,19 +157,21 @@ export default function Home() {
 
       {/* Navbar/Header */}
       <header className="absolute top-0 left-0 w-full z-50 px-6 py-8 md:px-16 lg:px-24 flex items-center justify-between">
-        <Image
-          src="/logo.png"
-          alt="INSL logo"
-          width={120}
-          height={42}
-          className="object-contain"
-          priority
-        />
+        <Link href="/">
+          <Image
+            src="/logo.png"
+            alt="INSL logo"
+            width={120}
+            height={42}
+            className="object-contain"
+            priority
+          />
+        </Link>
         <nav className="hidden lg:flex gap-12 text-[11px] font-bold tracking-[0.2em] uppercase text-white/80">
-          <a href="#" className="hover:text-white transition-colors">Home</a>
-          <a href="#" className="hover:text-white transition-colors">About Us</a>
-          <a href="#" className="hover:text-white transition-colors">Events</a>
-          <a href="#" className="hover:text-white transition-colors">Partners</a>
+          <Link href="/" className="text-white hover:text-white transition-colors">Home</Link>
+          <Link href="/about-us" className="hover:text-white transition-colors">About Us</Link>
+          <Link href="#" className="hover:text-white transition-colors">Events</Link>
+          <Link href="/partners" className="hover:text-white transition-colors">Partners</Link>
         </nav>
 
       </header>
@@ -589,10 +592,10 @@ export default function Home() {
           <div className="flex flex-wrap gap-16 lg:gap-32">
             <div className="flex flex-col gap-5">
               <h4 className="text-white font-bold tracking-[0.2em] uppercase text-xs mb-2">Explore</h4>
-              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Home</a>
-              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">About Us</a>
-              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Events</a>
-              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Partners</a>
+              <Link href="/" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Home</Link>
+              <Link href="/about-us" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">About Us</Link>
+              <Link href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Events</Link>
+              <Link href="/partners" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Partners</Link>
             </div>
 
             <div className="flex flex-col gap-5">
