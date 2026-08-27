@@ -476,32 +476,34 @@ export default function Home() {
           <h2 className="text-2xl md:text-4xl font-semibold text-center mb-16 text-white">
             Official Partners
           </h2>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-32">
-            <div className="flex flex-col items-center">
-              <p className="text-[#bc71ff] text-sm uppercase tracking-widest mb-6">Organized by</p>
-              <div className="relative w-48 md:w-64 h-20 opacity-80 hover:opacity-100 transition-opacity">
-                <Image
-                  src="/ypsl-logo-white.png"
-                  alt="IEEE Young Professionals Sri Lanka"
-                  fill
-                  className="object-contain"
-                  unoptimized
-                />
+          <div className="flex flex-wrap justify-center items-start gap-12 md:gap-16">
+            {[
+              { files: ['organized-by.png'], title: 'Organized By' },
+              { files: ['investment-partner.png'], title: 'Investment Partner', bgWhite: true },
+              { files: ['official-digital-media-partner.png'], title: 'Official Digital Media Partner' },
+              { files: ['regional-partner-1.png', 'regional-partner-2.png', 'regional-partner-3.png'], title: 'Regional Partners' }
+            ].map((partnerGroup, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                <div className="h-12 flex items-end mb-6">
+                  <p className="text-[#bc71ff] text-xs md:text-sm uppercase tracking-widest text-center">
+                    {partnerGroup.title}
+                  </p>
+                </div>
+                <div className="flex gap-8 items-center justify-center flex-wrap">
+                  {partnerGroup.files.map((file, fileIdx) => (
+                    <div key={fileIdx} className={`relative w-40 md:w-48 h-20 opacity-80 hover:opacity-100 transition-opacity ${partnerGroup.bgWhite ? 'bg-white rounded-xl p-4' : ''}`}>
+                      <Image
+                        src={`/partners/${file}`}
+                        alt={`${partnerGroup.title} ${fileIdx + 1}`}
+                        fill
+                        className="object-contain"
+                        unoptimized
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="w-full md:w-px h-px md:h-24 bg-white/10" />
-            <div className="flex flex-col items-center">
-              <p className="text-[#bc71ff] text-sm uppercase tracking-widest mb-6">Investment Partner</p>
-              <div className="relative w-48 md:w-64 h-20 bg-white rounded-xl p-4">
-                <Image
-                  src="/lan-logo-full.png"
-                  alt="Lankan Angel Network"
-                  fill
-                  className="object-contain p-2"
-                  unoptimized
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
