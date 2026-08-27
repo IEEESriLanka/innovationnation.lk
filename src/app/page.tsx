@@ -1,6 +1,9 @@
-import Image from "next/image";
+"use client";
 
-// Figma asset URLs - valid for 7 days
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+// Figma asset URLs
 const imgWhatWeOffer = "/final-pitch.jpg";
 const slideshowImages = [
   "/slideshow/1.jpg",
@@ -13,408 +16,335 @@ const slideshowImages = [
   "/slideshow/8.jpg",
 ];
 
+const competitionSteps = [
+  {
+    title: 'National Awareness Session',
+    desc: 'Official launch of INSL 2026, introducing the program to university students across Sri Lanka. An expert-led online session engages a wide student audience and encourages inclusive involvement.'
+  },
+  {
+    title: 'Road to INSL Program',
+    desc: 'Prepares participants through awareness and guidance activities before the main competition begins. Builds early understanding of entrepreneurship and strengthens readiness for zonal-level participation.'
+  },
+  {
+    title: 'Zonal Competitions',
+    desc: 'Conducted across four zones covering all IEEE Student Branches in Sri Lanka, with Idea and Business stages. 3 teams per stage from each zone are selected, advancing 24 teams to the Quarter Finals.'
+  },
+  {
+    title: 'Quarter Finals',
+    desc: 'Top 24 teams participate in structured workshops to enhance innovation, business, and pitching skills. Evaluations from Idea and Business stages select 12 teams to progress with assigned mentors.'
+  },
+  {
+    title: 'Semi Final',
+    desc: 'Top 12 teams compete in Idea and Business stages, presenting refined business solutions to judges. The best 6 teams are selected to advance to the Final Pitch stage.'
+  },
+  {
+    title: 'Final Pitch',
+    desc: 'Top 6 teams deliver final refined pitches to a panel of expert judges. One winner will be selected for each stage: Idea Stage and Business Stage.'
+  },
+  {
+    title: 'Investor Lounge',
+    desc: 'Final stage connecting top startups with investors and industry leaders for exposure. Enables networking, funding opportunities, and potential partnerships for scaling ideas.'
+  }
+];
+
+const teamMembers = [
+  {
+    name: 'Hasidu Fernando',
+    role: 'Chair',
+    organization: 'IEEE Innovation Nation Sri Lanka 2026',
+    phone: '(+94) 70 144 0168',
+    email: 'hasidu.chamoditha234@gmail.com',
+    image: '/hasidu.png',
+    imagePosition: 'center 20%',
+  },
+  {
+    name: 'Shafkhan Mohammed',
+    role: 'Program Vice Chair',
+    organization: 'IEEE Innovation Nation Sri Lanka 2026',
+    phone: '(+94) 76 450 5146',
+    email: 'shafkhan@ieee.org',
+    image: '/shafkan.png',
+    imagePosition: 'center 15%',
+  },
+];
+
+const offers = [
+  {
+    title: 'Competition',
+    description: 'To recognize achievements, talents, and innovative ideas at a national level',
+    image: '/offers/competition.jpg'
+  },
+  {
+    title: 'Workshops',
+    description: '',
+    image: '/offers/workshops.jpg'
+  },
+  {
+    title: 'Innovation & Entrepreneurship',
+    description: '',
+    image: '/offers/innovation.jpg'
+  },
+  {
+    title: 'Pitch Deck Mastery',
+    description: '',
+    image: '/offers/pitch-deck.jpg'
+  },
+  {
+    title: 'Mentoring Sessions',
+    description: 'One-on-one sessions with industry experts and domain specialists',
+    image: '/offers/mentoring.jpg'
+  },
+  {
+    title: 'Investment Opportunities',
+    description: 'Access to investor networking and investor lounge opportunities',
+    image: '/offers/investment.jpg'
+  },
+  {
+    title: 'Weekly Deal Show',
+    description: 'Potential competitors with fundable pitches will get the opportunity to feature in the Weekly Deal Show',
+    image: '/offers/deal-show.jpg'
+  }
+];
+
 export default function Home() {
-  const competitionSteps = [
-    {
-      title: 'National Awareness Session',
-      desc: 'Official launch of INSL 2026, introducing the program to university students across Sri Lanka. An expert-led online session engages a wide student audience and encourages inclusive involvement.'
-    },
-    {
-      title: 'Road to INSL Program',
-      desc: 'Prepares participants through awareness and guidance activities before the main competition begins. Builds early understanding of entrepreneurship and strengthens readiness for zonal-level participation.'
-    },
-    {
-      title: 'Zonal Competitions',
-      desc: 'Conducted across four zones covering all IEEE Student Branches in Sri Lanka, with Idea and Business stages. 3 teams per stage from each zone are selected, advancing 24 teams to the Quarter Finals.'
-    },
-    {
-      title: 'Quarter Finals',
-      desc: 'Top 24 teams participate in structured workshops to enhance innovation, business, and pitching skills. Evaluations from Idea and Business stages select 12 teams to progress with assigned mentors.'
-    },
-    {
-      title: 'Semi Final',
-      desc: 'Top 12 teams compete in Idea and Business stages, presenting refined business solutions to judges. The best 6 teams are selected to advance to the Final Pitch stage.'
-    },
-    {
-      title: 'Final Pitch',
-      desc: 'Top 6 teams deliver final refined pitches to a panel of expert judges. One winner will be selected for each stage: Idea Stage and Business Stage.'
-    },
-    {
-      title: 'Investor Lounge',
-      desc: 'Final stage connecting top startups with investors and industry leaders for exposure. Enables networking, funding opportunities, and potential partnerships for scaling ideas.'
-    }
-  ];
-
-  const teamMembers = [
-    {
-      name: 'Hasidu Fernando',
-      role: 'Chair',
-      organization: 'IEEE Innovation Nation Sri Lanka 2026',
-      phone: '(+94) 70 144 0168',
-      email: 'hasidu.chamoditha234@gmail.com',
-      image:
-        '/hasidu.png',
-      imagePosition: 'center 20%',
-    },
-    {
-      name: 'Shafkhan Mohammed',
-      role: 'Program Vice Chair',
-      organization: 'IEEE Innovation Nation Sri Lanka 2026',
-      phone: '(+94) 76 450 5146',
-      email: 'shafkhan@ieee.org',
-      image:
-        '/shafkan.png',
-      imagePosition: 'center 15%',
-    },
-  ];
-
   return (
-    <main className="bg-[#0c0325] min-h-screen w-full overflow-x-hidden">
+    <main className="bg-[#0c0325] min-h-screen w-full overflow-x-hidden text-white selection:bg-[#bc71ff] selection:text-white">
+
+      {/* Navbar/Header */}
+      <header className="absolute top-0 left-0 w-full z-50 px-6 py-8 md:px-16 lg:px-24 flex items-center justify-between">
+        <Image
+          src="/logo.png"
+          alt="INSL logo"
+          width={120}
+          height={42}
+          className="object-contain"
+          priority
+        />
+        <nav className="hidden lg:flex gap-12 text-[11px] font-bold tracking-[0.2em] uppercase text-white/80">
+          <a href="#" className="hover:text-white transition-colors">Home</a>
+          <a href="#" className="hover:text-white transition-colors">About Us</a>
+          <a href="#" className="hover:text-white transition-colors">Events</a>
+          <a href="#" className="hover:text-white transition-colors">Pages</a>
+        </nav>
+
+      </header>
+
       {/* Hero Section */}
-      <section className="hero-slideshow relative w-full min-h-screen overflow-hidden">
-        {/* Background Slideshow */}
-        <div className="absolute inset-0 overflow-hidden">
-          {slideshowImages.map((src, index) => (
-            <Image
-              key={src}
-              src={src}
-              alt="Hero background"
-              fill
-              sizes="100vw"
-              className="hero-slideshow-image object-cover"
-              style={{ animationDelay: `${index * 4}s` }}
-              priority={index === 0}
-            />
-          ))}
+      <section className="relative w-full h-screen flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-16 lg:px-24 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src="/rectangle137.png"
+            alt="INSL Hero Background"
+            fill
+            className="object-cover object-top"
+            priority
+          />
         </div>
 
-        {/* Gradient Overlay */}
-        <div className="hero-slideshow-overlay absolute inset-0" />
+        {/* Subtle overlay for text readability */}
+        <div className="absolute inset-0 w-full h-full bg-[#0c0325]/30" />
 
-        {/* Hero Content */}
-        <div className="relative z-10 flex min-h-screen w-full flex-col justify-end px-4 sm:px-6 lg:px-25">
-          {/* Logo aligned with content padding */}
-          <div className="mb-auto mt-25">
-            <Image
-              src="/logo.png"
-              alt="INSL logo"
-              width={160}
-              height={56}
-              className="w-24 sm:w-28 md:w-32 lg:w-40 object-contain"
-              priority
-            />
-          </div>
-<div className="mb-[5%]">
-          <h3 className="text-[#8e74f3] text-2xl sm:text-3xl md:text-4xl lg:text-[65.043px] font-semibold mb-2 sm:mb-3 md:mb-4">
-            IEEE
-          </h3>
-          <h1 className="text-[#bdafff] text-3xl sm:text-4xl md:text-5xl lg:text-[117.078px] font-bold leading-tight mb-2 sm:mb-3">
-            INNOVATION NATION
-          </h1>
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-[103.361px] font-bold">
-            SRI LANKA
-          </h2>
-</div>
+        {/* Blend into next section's background color */}
+        <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-[#4b32a8] via-[#4b32a8]/80 to-transparent" />
 
+        <div className="w-full flex flex-col z-10 relative">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col w-full text-white font-black uppercase tracking-tighter text-left"
+          >
+            <span className="text-[12vw] md:text-[10vw] lg:text-[9vw] leading-[0.85]">
+              INNOVATION NATION
+            </span>
+            <span className="text-[12vw] md:text-[10vw] lg:text-[9vw] leading-[0.85] text-[#e9c7ff]">
+              SRI LANKA 2026
+            </span>
+          </motion.h1>
         </div>
       </section>
 
-      {/* Intro Section with Image */}
+      {/* About Us Section (Reference 2 style) */}
       <section className="relative w-full bg-[#0c0325]">
-        <div className="flex flex-col lg:flex-row items-center lg:items-stretch min-h-125" style={{ minHeight: '75vh' }}>
-          {/* Text Content */}
-          <div className="w-full lg:w-1/2 px-4 sm:px-6 lg:px-19 py-12 lg:py-16 flex flex-col justify-center">
-            <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-[39.429px] leading-relaxed font-medium max-w-2xl">
-              Innovation Nation Sri Lanka is an ecosystem that aims to build an innovation and entrepreneurial culture among
-              Sri Lankan university students.
+        {/* Solid Top Background */}
+        <div className="absolute top-0 left-0 w-full h-[60%] bg-[#4b32a8]" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 pt-20">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16">
+            <h2 className="text-4xl md:text-6xl font-semibold text-white relative">
+              {/* Subtle text glow behind */}
+              <span className="absolute inset-0 bg-[#bc71ff] blur-xl opacity-20 -z-10 rounded-full" />
+              About INSL
+            </h2>
+            <p className="text-white/90 text-lg md:text-xl font-light max-w-xl leading-relaxed">
+              Innovation Nation Sri Lanka is an ecosystem that aims to build an innovation and entrepreneurial culture among Sri Lankan university students.
             </p>
           </div>
 
-          {/* Image Content */}
-          <div className="w-full lg:w-1/2 relative h-auto overflow-hidden">
+          {/* Large Center Image Bridging Backgrounds */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="w-full relative aspect-[16/9] rounded-[2rem] overflow-hidden shadow-[0_30px_60px_rgba(12,3,37,0.6)]"
+          >
             <Image
-              src='/intro.png'
-              alt="Innovation Nation team"
+              src="/intro.png"
+              alt="Innovation Nation Sri Lanka"
               fill
               className="object-cover"
               unoptimized
             />
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* What Does INSL Offer Section */}
-      <section className="relative w-full py-12 sm:py-16 md:py-20 lg:py-24">
-        {/* Background Image */}
-        <div className="absolute inset-0 opacity-100 pointer-events-none z-0">
-          <Image
-            src={imgWhatWeOffer}
-            alt="What we offer background"
-            fill
-            className="object-cover"
-            unoptimized
-          />
-        </div>
+      {/* What Does INSL Offer Section (Clean Grid) */}
+      <section className="relative w-full py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-[#0c0325]">
+        <div className="max-w-7xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-5xl font-semibold mb-16 text-[#bdafff]"
+          >
+            What Does INSL Offer?
+          </motion.h2>
 
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-[rgba(12,3,37,0.7)] pointer-events-none z-10" />
-
-        {/* Content */}
-        <div className="relative z-20 px-4 sm:px-6 lg:px-25.25">
-          <h2 className="text-[#bdafff] text-3xl sm:text-4xl md:text-5xl lg:text-[74.916px] font-bold mb-12 sm:mb-16 md:mb-20">
-            WHAT DOES INSL OFFER?
-          </h2>
-
-          {/* Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-[52px_80px]">
-            {[
-              {
-                title: 'Competition',
-                description: 'To recognize achievements, talents, and innovative ideas at a national level',
-                image: '/offers/competition.jpg'
-              },
-              {
-                title: 'Workshops',
-                description: '',
-                image: '/offers/workshops.jpg'
-              },
-              {
-                title: 'Innovation & Entrepreneurship',
-                description: '',
-                image: '/offers/innovation.jpg'
-              },
-              {
-                title: 'Pitch Deck Mastery',
-                description: '',
-                image: '/offers/pitch-deck.jpg'
-              },
-              {
-                title: 'Mentoring Sessions',
-                description: 'One-on-one sessions with industry experts and domain specialists',
-                image: '/offers/mentoring.jpg'
-              },
-              {
-                title: 'Investment Opportunities',
-                description: 'Access to investor networking and investor lounge opportunities',
-                image: '/offers/investment.jpg'
-              },
-              {
-                title: 'Weekly Deal Show',
-                description: 'Potential competitors with fundable pitches will get the opportunity to feature in the Weekly Deal Show',
-                image: '/offers/deal-show.jpg'
-              }
-            ].map((item, index) => (
-              <div key={index} className="bg-[#4b32a8] overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
-                <div className="relative h-32 sm:h-40 md:h-48 lg:h-62.25 shrink-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+            {offers.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-[#150d2c] rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300 border border-white/5"
+              >
+                <div className="relative h-48 w-full overflow-hidden">
                   <Image
                     src={item.image}
-                    alt={`${item.title} background`}
+                    alt={item.title}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-[#4b32a8]/45 via-[#4b32a8]/15 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#150d2c] to-transparent opacity-80" />
                 </div>
-                <div className="p-4 sm:p-5 md:p-6 flex-1 flex flex-col justify-end">
-                  <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl lg:text-[25.168px] mb-3 sm:mb-4">
-                    {item.title}
-                  </h3>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
                   {item.description && (
-                    <p className="text-white text-xs sm:text-sm md:text-base lg:text-[15.981px] leading-relaxed">
-                      {item.description}
-                    </p>
+                    <p className="text-[#d7cff9]/70 text-sm leading-relaxed">{item.description}</p>
                   )}
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Competition Structure Section */}
-      <section className="relative w-full bg-[#0c0325]">
-        <div className="relative z-20 px-4 sm:px-6 lg:px-30 py-12 sm:py-16 md:py-20 lg:py-24">
-          <h2 className="text-[#bdafff] text-3xl sm:text-4xl md:text-5xl lg:text-[74.916px] font-bold text-center">
-            COMPETITION STRUCTURE
-          </h2>
+      {/* Competition Structure Section (Clean List) */}
+      <section className="relative w-full py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-[#0c0325] border-t border-white/5">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
+          <div className="lg:w-1/3">
+            <motion.h2
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="text-3xl md:text-5xl font-semibold mb-6 text-white sticky top-24"
+            >
+              Competition Structure
+            </motion.h2>
+          </div>
 
-          <p className="text-[#d7cff9] text-center max-w-3xl mx-auto mt-6">
-            A clear progression from awareness to investor connections — designed to prepare, test and scale the best student innovations across Sri Lanka.
-          </p>
-
-          {/* Timeline / Steps */}
-          <div className="mt-14 mx-auto">
-            <div className="overflow-x-auto pb-4 [scrollbar-width:thin] [scrollbar-color:#5d45b6_transparent]">
-              <div className="min-w-[1120px] px-2 sm:px-4">
-                <div className="grid grid-cols-7 grid-rows-[minmax(220px,1fr)_84px_minmax(220px,1fr)] gap-x-4 sm:gap-x-5 lg:gap-x-6">
-                  {competitionSteps.map((step, idx) => (
-                    <article
-                      key={`top-${step.title}`}
-                      className={`${idx % 2 === 0 ? 'row-start-1' : 'row-start-3'} self-stretch snap-center`}
-                      style={{ gridColumnStart: idx + 1 }}
-                    >
-                      <div className="relative h-full  border border-[#5e46b4]/45 bg-[#1a1135] px-4 py-5 sm:px-5 sm:py-6">
-                        <div className="absolute right-3 top-1 text-[60px] sm:text-[68px] font-black leading-none text-[#6a51cd]/20 select-none">
-                          {String(idx + 1).padStart(2, "0")}
-                        </div>
-
-                        <div className="relative z-10">
-                          
-
-                          <h3 className="mt-3 text-white text-base sm:text-lg font-semibold leading-snug">
-                            {step.title}
-                          </h3>
-
-                          <p className="mt-2 text-[#d7cff9] text-xs sm:text-sm leading-relaxed">
-                            {step.desc}
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  ))}
-
-                  {competitionSteps.map((step, idx) => (
-                    <div
-                      key={`mid-${step.title}`}
-                      className="relative row-start-2 flex items-center justify-center"
-                      style={{ gridColumnStart: idx + 1 }}
-                    >
-                      {idx > 0 && <span className="absolute left-0 right-1/2 h-px bg-[#6e52cf]/70" aria-hidden />}
-                      {idx < competitionSteps.length - 1 && <span className="absolute left-1/2 right-0 h-px bg-[#6e52cf]/70" aria-hidden />}
-
-                      <div className="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border border-[#bdafff]/70 bg-[#2b1d59]" aria-hidden>
-                        <div className="h-2.5 w-2.5 rounded-full bg-[#bdafff]" />
-                      </div>
-                    </div>
-                  ))}
+          <div className="lg:w-2/3 flex flex-col gap-10">
+            {competitionSteps.map((step, idx) => (
+              <motion.div
+                key={step.title}
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="flex gap-6 md:gap-8 group"
+              >
+                <div className="text-2xl md:text-3xl font-light text-[#4b32a8] group-hover:text-[#bc71ff] transition-colors mt-1">
+                  {String(idx + 1).padStart(2, "0")}
                 </div>
-              </div>
-            </div>
-
-       
+                <div>
+                  <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">{step.title}</h3>
+                  <p className="text-[#d7cff9]/80 font-light leading-relaxed">{step.desc}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Idea vs Business Stage Section */}
-      <section className="relative w-full overflow-hidden bg-[#0c0325] py-16 sm:py-24 lg:py-32">
-        {/* Decorative Circuit Board Background */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          {/* Top Right Traces */}
-          <svg className="absolute right-0 top-0 h-full w-1/2 opacity-60" viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMin meet">
-            <path d="M 250 0 L 250 50 L 300 100 L 400 100" stroke="#3d1466" strokeWidth="1.5" />
-            <circle cx="300" cy="100" r="2.5" fill="#a468ff" opacity="0.8" />
-            <circle cx="250" cy="50" r="2.5" fill="#a468ff" opacity="0.8" />
-
-            <path d="M 280 0 L 280 80 L 320 120 L 400 120" stroke="#3d1466" strokeWidth="1.5" />
-            <circle cx="320" cy="120" r="2.5" fill="#a468ff" opacity="0.8" />
-            <circle cx="280" cy="80" r="2.5" fill="#a468ff" opacity="0.8" />
-
-            <path d="M 310 0 L 310 130 L 350 170 L 400 170" stroke="#3d1466" strokeWidth="1.5" />
-            <circle cx="350" cy="170" r="2.5" fill="#a468ff" opacity="0.8" />
-          </svg>
-
-          {/* Bottom Left Traces */}
-          <svg className="absolute left-0 bottom-0 h-full w-1/2 opacity-60" viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMax meet">
-            <path d="M 0 450 L 80 450 L 130 500 L 130 600" stroke="#3d1466" strokeWidth="1.5" />
-            <circle cx="80" cy="450" r="2.5" fill="#a468ff" opacity="0.8" />
-            <circle cx="130" cy="500" r="2.5" fill="#a468ff" opacity="0.8" />
-
-            <path d="M 0 480 L 50 480 L 100 530 L 100 600" stroke="#3d1466" strokeWidth="1.5" />
-            <circle cx="50" cy="480" r="2.5" fill="#a468ff" opacity="0.8" />
-            <circle cx="100" cy="530" r="2.5" fill="#a468ff" opacity="0.8" />
-
-            <path d="M 0 520 L 40 520 L 70 550 L 70 600" stroke="#3d1466" strokeWidth="1.5" />
-            <circle cx="70" cy="550" r="2.5" fill="#a468ff" opacity="0.8" />
-
-            <path d="M 0 560 L 20 560 L 40 580 L 40 600" stroke="#3d1466" strokeWidth="1.5" />
-          </svg>
-        </div>
-
-        <div className="relative z-10 mx-[6%] px-10 sm:px-6 lg:px-19">
-          {/* Main title */}
-          <div className="mb-20 sm:mb-32 text-center">
-            <h2 className="text-[#e9c7ff] text-3xl sm:text-5xl md:text-[52px] font-bold leading-tight tracking-wide">
-              IDEA STAGE vs BUSINESS STAGE
-            </h2>
-          </div>
-
-          <div className="flex flex-col space-y-24 sm:space-y-32">
-            {/* Idea Stage */}
-            <div className="relative w-full">
-              {/* Left Line & Dot */}
-              <div className="absolute left-2 sm:left-4 top-6 -bottom-40 w-0.75 bg-[#531b81]"></div>
-              <div className="absolute left-2 sm:left-4 top-6 h-8.5 w-8.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#531b81]"></div>
-
-              <div className="pl-12 sm:pl-20">
-                <h3 className="text-[#bc71ff] text-[2.5rem] font-black mb-8 tracking-wide">
-                  IDEA STAGE
-                </h3>
-                <div className="space-y-4 text-white/95 text-[1rem]  font-semibold tracking-wider leading-loose">
-                  <p>HAVE AN IDEA BUT HAVEN&apos;T STARTED DEVELOPING YET?</p>
-                  <p>JOIN THE IDEA STAGE,</p>
-                  <p>WE WILL HELP YOU AND TURN YOUR CONCEPT INTO REALITY.</p>
-                  <p>JUST BRING YOUR IDEA AND LET&apos;S BUILD IT TOGETHER.</p>
-                </div>
-              </div>
+      <section className="relative w-full py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-[#0c0325]">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12">
+          {/* Idea Stage Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-gradient-to-br from-[#150d2c] to-[#150d2c]/50 p-10 md:p-14 rounded-[2rem] border border-[#bc71ff]/20 hover:border-[#bc71ff]/50 transition-colors"
+          >
+            <h3 className="text-3xl md:text-4xl font-semibold text-[#e9c7ff] mb-8">Idea Stage</h3>
+            <div className="space-y-4 text-[#d7cff9] font-light leading-relaxed">
+              <p>Have an idea but haven&apos;t started developing yet?</p>
+              <p>Join the Idea Stage, we will help you and turn your concept into reality.</p>
+              <p>Just bring your idea and let&apos;s build it together.</p>
             </div>
+          </motion.div>
 
-            {/* Business Stage */}
-            <div className="relative w-full mt-5">
-              {/* Right Line & Dot */}
-              <div className="absolute right-2 sm:right-4 -top-25 -bottom-25 w-0.75 bg-[#531b81]"></div>
-              <div className="absolute right-2 sm:right-4 top-6 h-8.5 w-8.5 translate-x-1/2 -translate-y-1/2 rounded-full bg-[#531b81]"></div>
-
-              <div className="pr-12 sm:pr-20 text-right">
-                <h3 className="text-[#bc71ff]  text-[2.5rem] font-black mb-8 tracking-wide">
-                  BUSINESS STAGE
-                </h3>
-                <div className="space-y-4 text-white/95 text-[1rem]  font-semibold tracking-wider leading-loose">
-                  <p>HAVE AN IDEA BUT HAVEN&apos;T STARTED DEVELOPING YET?</p>
-                  <p>JOIN THE IDEA STAGE,</p>
-                  <p>WE WILL HELP YOU AND TURN YOUR CONCEPT INTO REALITY.</p>
-                  <p>JUST BRING YOUR IDEA AND LET&apos;S BUILD IT TOGETHER.</p>
-                </div>
-              </div>
+          {/* Business Stage Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="bg-gradient-to-br from-[#150d2c] to-[#150d2c]/50 p-10 md:p-14 rounded-[2rem] border border-[#8e74f3]/20 hover:border-[#8e74f3]/50 transition-colors"
+          >
+            <h3 className="text-3xl md:text-4xl font-semibold text-[#bdafff] mb-8">Business Stage</h3>
+            <div className="space-y-4 text-[#d7cff9] font-light leading-relaxed">
+              <p>Have an idea but haven&apos;t started developing yet?</p>
+              <p>Join the Idea Stage, we will help you and turn your concept into reality.</p>
+              <p>Just bring your idea and let&apos;s build it together.</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Official Partners Section */}
-      <section className="relative w-full bg-[#0c0325] py-16 sm:py-24 lg:py-32 flex flex-col items-center justify-center">
-        <h2 className="text-[#e9c7ff] text-3xl sm:text-5xl md:text-[52px] font-bold leading-tight tracking-wide mb-16 sm:mb-20 text-center">
-          OFFICIAL PARTNERS
-        </h2>
-
-        <div className="flex flex-col items-center space-y-20 sm:space-y-24 w-full px-4">
-          {/* Organized By */}
-          <div className="flex flex-col items-center space-y-8 sm:space-y-10 w-full">
-            <h3 className="text-white text-xl sm:text-2xl lg:text-[28px] font-medium tracking-wide">
-              Organized by
-            </h3>
-            <div className="relative w-64 sm:w-80 md:w-96 lg:w-[450px] h-24 sm:h-32 lg:h-40">
-              <Image
-                src="/ypsl-logo-white.png"
-                alt="IEEE Young Professionals Sri Lanka"
-                fill
-                className="object-contain"
-                unoptimized
-              />
+      <section className="relative w-full py-24 bg-[#150d2c]">
+        <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24">
+          <h2 className="text-2xl md:text-4xl font-semibold text-center mb-16 text-white">
+            Official Partners
+          </h2>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-32">
+            <div className="flex flex-col items-center">
+              <p className="text-[#bc71ff] text-sm uppercase tracking-widest mb-6">Organized by</p>
+              <div className="relative w-48 md:w-64 h-20 opacity-80 hover:opacity-100 transition-opacity">
+                <Image
+                  src="/ypsl-logo-white.png"
+                  alt="IEEE Young Professionals Sri Lanka"
+                  fill
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
             </div>
-          </div>
-
-          {/* Investment Partner */}
-          <div className="flex flex-col items-center space-y-8 sm:space-y-10 w-full">
-            <h3 className="text-white text-xl sm:text-2xl lg:text-[28px] font-medium tracking-wide">
-              Investment Partner
-            </h3>
-            <div className="bg-white px-6 py-6 sm:px-10 sm:py-8 w-72 sm:w-96 md:w-[450px] lg:w-[500px] flex items-center justify-center">
-              <div className="relative w-full h-24 sm:h-32 lg:h-40">
+            <div className="w-full md:w-px h-px md:h-24 bg-white/10" />
+            <div className="flex flex-col items-center">
+              <p className="text-[#bc71ff] text-sm uppercase tracking-widest mb-6">Investment Partner</p>
+              <div className="relative w-48 md:w-64 h-20 bg-white rounded-xl p-4">
                 <Image
                   src="/lan-logo-full.png"
                   alt="Lankan Angel Network"
                   fill
-                  className="object-contain"
+                  className="object-contain p-2"
                   unoptimized
                 />
               </div>
@@ -423,57 +353,65 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Meet the Team Section */}
-      <section className="relative w-full overflow-hidden bg-[#0c0325] py-16 sm:py-24 lg:py-32">
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-19">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-[#bc71ff] text-sm sm:text-base font-semibold uppercase tracking-[0.3em]">
-              Meet the Team
-            </p>
-            <h2 className="mt-4 text-[#e9c7ff] text-3xl sm:text-5xl md:text-[52px] font-bold leading-tight tracking-wide">
-              PEOPLE BEHIND INSL 2026
+      {/* Meet the Team (Reference 3 style) */}
+      <section className="relative w-full overflow-hidden">
+        {/* Background Split */}
+        <div className="absolute top-0 left-0 w-full h-[55%] bg-[#0c0325] z-0" />
+        <div className="absolute bottom-0 left-0 w-full h-[45%] bg-[#4b32a8] z-0" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 pt-24 pb-32">
+
+          <div className="mb-16">
+            <h2 className="text-3xl md:text-5xl font-semibold text-white mb-4">
+              People Behind INSL 2026
             </h2>
-         
+            <p className="text-[#d7cff9] font-light text-lg">
+              Meet the core organizing committee shaping the future of technology.
+            </p>
           </div>
 
-          <div className="mt-14 grid gap-8 md:grid-cols-2">
-            {teamMembers.map((member) => (
-              <article
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl">
+            {teamMembers.map((member, idx) => (
+              <motion.div
                 key={member.name}
-                className="overflow-hidden border border-[#5e46b4]/50 bg-[#150d2c]"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.1 }}
+                className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.2)] bg-[#1a1a24]"
               >
-                <div className="grid md:grid-cols-[14rem_1fr]">
-                  <div className="relative aspect-[4/3] md:aspect-auto md:min-h-full overflow-hidden bg-[#20133f]">
-                    <Image
-                      src={member.image}
-                      alt={`${member.name} portrait`}
-                      fill
-                      sizes="(max-width: 767px) 100vw, 320px"
-                      className="object-cover"
-                      style={{ objectPosition: member.imagePosition }}
-                    />
-                  </div>
+                {/* Image Top Half */}
+                <div className="relative w-full aspect-[4/3] bg-[#0c0325]">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                    style={{ objectPosition: member.imagePosition }}
+                  />
+                </div>
 
-                  <div className="p-6 sm:p-8 lg:p-10">
-                    <p className="text-[#bc71ff] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">
-                      {member.role}
-                    </p>
-                    <h3 className="mt-3 text-white text-2xl sm:text-3xl font-bold leading-tight">
-                      {member.name}
-                    </h3>
+                {/* Content Bottom Half */}
+                <div className="p-8 md:p-10 bg-[#1f1f2e] flex flex-col flex-1 border-t-2 border-[#bc71ff]/50">
+                  <h3 className="text-xl md:text-2xl font-semibold text-white mb-1">{member.name}</h3>
+                  <p className="text-[#d7cff9] text-sm mb-6 font-medium">{member.role}</p>
 
+                  <p className="text-white/70 text-sm font-light mb-6 flex-1">
+                    {member.organization}
+                  </p>
 
-                    <div className="mt-6 space-y-4 border-t border-white/10 pt-5 text-sm sm:text-base text-white/90">
-                      <p>{member.phone}</p>
-                      <p className="break-all">{member.email}</p>
-                    </div>
+                  <div className="flex flex-col gap-2 text-sm text-white/50 font-light mt-auto">
+                    <span>{member.email}</span>
+                    <span>{member.phone}</span>
                   </div>
                 </div>
-              </article>
+              </motion.div>
             ))}
           </div>
+
         </div>
       </section>
+
     </main>
   );
 }

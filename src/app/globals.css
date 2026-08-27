@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0c0325;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -12,65 +12,24 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
-.hero-slideshow-image {
-  opacity: 0;
-  animation: heroSlideshowFade 32s infinite;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
-
-.hero-slideshow-overlay {
-  background-image: linear-gradient(
-    180deg,
-    rgba(75, 50, 168, 0.1) 30%,
-    rgba(61, 41, 138, 0.6) 40%,
-    rgba(49, 32, 109, 0.8) 55%,
-    rgba(41, 28, 93, 0.95) 75%,
-    rgb(35, 23, 78) 100%,
-    rgb(29, 20, 66) 100%
-  );
+::-webkit-scrollbar-track {
+  background: #0c0325;
 }
-
-@keyframes heroSlideshowFade {
-  0% {
-    opacity: 0;
-  }
-
-  6.25% {
-    opacity: 1;
-  }
-
-  18.75% {
-    opacity: 1;
-  }
-
-  25% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
+::-webkit-scrollbar-thumb {
+  background: #4b32a8;
+  border-radius: 4px;
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-slideshow-image {
-    animation: none;
-    opacity: 0;
-  }
-
-  .hero-slideshow-image:first-child {
-    opacity: 1;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #bc71ff;
 }
