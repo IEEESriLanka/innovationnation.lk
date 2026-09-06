@@ -34,39 +34,39 @@ export default function Partners() {
       {/* Hero Section */}
       <section className="relative w-full pt-48 pb-32 px-6 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto flex flex-col items-center">
-           <h1 className="text-5xl md:text-7xl font-bold mb-8 uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white to-white/50 text-center">
-             Our <span className="text-[#bc71ff]">Partners</span>
-           </h1>
-           <p className="text-white/70 text-lg md:text-xl font-light max-w-2xl leading-relaxed text-center mb-24">
-             We are proud to collaborate with industry leaders and organizations who share our vision of empowering the next generation of innovators.
-           </p>
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white to-white/50 text-center">
+            Our <span className="text-[#bc71ff]">Partners</span>
+          </h1>
+          <p className="text-white/70 text-lg md:text-xl font-light max-w-2xl leading-relaxed text-center mb-24">
+            We are proud to collaborate with industry leaders and organizations who share our vision of empowering the next generation of innovators.
+          </p>
 
-           <div className="w-full flex flex-col gap-24">
-              {partnersData.map((partnerGroup, idx) => (
-                <div key={idx} className="flex flex-col items-center">
-                  <div className="mb-12 flex flex-col items-center">
-                    <p className="text-[#bc71ff] text-sm md:text-base uppercase tracking-widest text-center font-bold">
-                      {partnerGroup.title}
-                    </p>
-                    <div className="w-16 h-px bg-[#bc71ff]/50 mt-4" />
-                  </div>
-                  
-                  <div className="flex gap-12 md:gap-16 items-center justify-center flex-wrap">
-                    {partnerGroup.files.map((file, fileIdx) => (
-                      <div key={fileIdx} className={`relative w-48 md:w-64 h-24 opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-300 ${partnerGroup.bgWhite ? 'bg-white rounded-2xl p-6 shadow-[0_0_30px_rgba(188,113,255,0.15)]' : ''}`}>
-                        <Image
-                          src={`/partners/${file}`}
-                          alt={`${partnerGroup.title} ${fileIdx + 1}`}
-                          fill
-                          className="object-contain"
-                          unoptimized
-                        />
-                      </div>
-                    ))}
-                  </div>
+          <div className="w-full flex flex-col gap-24">
+            {partnersData.map((partnerGroup, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                <div className="mb-12 flex flex-col items-center">
+                  <p className="text-[#bc71ff] text-sm md:text-base uppercase tracking-widest text-center font-bold">
+                    {partnerGroup.title}
+                  </p>
+                  <div className="w-16 h-px bg-[#bc71ff]/50 mt-4" />
                 </div>
-              ))}
-           </div>
+
+                <div className="flex gap-12 md:gap-16 items-center justify-center flex-wrap">
+                  {partnerGroup.files.map((file, fileIdx) => (
+                    <div key={fileIdx} className={`relative w-48 md:w-64 h-24 opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-300 ${partnerGroup.bgWhite ? 'bg-white rounded-2xl p-6 shadow-[0_0_30px_rgba(188,113,255,0.15)]' : ''}`}>
+                      <Image
+                        src={`/partners/${file}`}
+                        alt={`${partnerGroup.title} ${fileIdx + 1}`}
+                        fill
+                        className="object-contain rounded-2xl"
+                        unoptimized
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -87,7 +87,7 @@ export default function Partners() {
               <Link href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Events</Link>
               <Link href="/partners" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Partners</Link>
             </div>
-            
+
             <div className="flex flex-col gap-5">
               <h4 className="text-white font-bold tracking-[0.2em] uppercase text-xs mb-2">Connect</h4>
               <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Contact Us</a>

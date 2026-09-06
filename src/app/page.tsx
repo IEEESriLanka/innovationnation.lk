@@ -499,7 +499,7 @@ export default function Home() {
                         src={`/partners/${file}`}
                         alt={`${partnerGroup.title} ${fileIdx + 1}`}
                         fill
-                        className="object-contain"
+                        className="object-contain rounded-xl"
                         unoptimized
                       />
                     </div>
