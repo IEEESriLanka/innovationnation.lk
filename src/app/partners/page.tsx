@@ -28,6 +28,7 @@ export default function Partners() {
           <Link href="/about-us" className="hover:text-white transition-colors">About Us</Link>
           <Link href="#" className="hover:text-white transition-colors">Events</Link>
           <Link href="/partners" className="text-white hover:text-white transition-colors">Partners</Link>
+          <Link href="/glimpse-of-insl" className="hover:text-white transition-colors">Glimpse of INSL</Link>
         </nav>
       </header>
 
@@ -86,6 +87,7 @@ export default function Partners() {
               <Link href="/about-us" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">About Us</Link>
               <Link href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Events</Link>
               <Link href="/partners" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Partners</Link>
+              <Link href="/glimpse-of-insl" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Glimpse of INSL</Link>
             </div>
 
             <div className="flex flex-col gap-5">
