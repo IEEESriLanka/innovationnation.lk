@@ -21,6 +21,7 @@ export default function AboutUs() {
           <Link href="/about-us" className="text-white hover:text-white transition-colors">About Us</Link>
           <Link href="#" className="hover:text-white transition-colors">Events</Link>
           <Link href="/partners" className="hover:text-white transition-colors">Partners</Link>
+          <Link href="/glimpse-of-insl" className="hover:text-white transition-colors">Glimpse of INSL</Link>
         </nav>
       </header>
 
