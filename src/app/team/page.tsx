@@ -16,13 +16,40 @@ const teamMembers = [
   },
   {
     name: 'Shafkhan Mohammed',
-    role: 'Program Vice Chair',
+    role: 'Vice Chair - Program',
     organization: 'IEEE Innovation Nation Sri Lanka 2026',
     phone: '(+94) 76 450 5146',
     email: 'shafkhan@ieee.org',
     image: '/shafkan.png',
     imagePosition: 'center 15%',
   },
+  {
+    name: 'Sanugi Wickramasinghe',
+    role: 'Vice Chair - Secretary Team',
+    organization: 'IEEE Innovation Nation Sri Lanka 2026',
+    phone: '(+94) 71 654 2724',
+    email: 'sanugidwickramasinghe@gmail.com',
+    image: '/sanugi.jpg',
+    imagePosition: 'center 20%',
+  },
+  {
+    name: 'Tiromi Gunarathne',
+    role: 'Vice Chair - Finance Team',
+    organization: 'IEEE Innovation Nation Sri Lanka 2026',
+    phone: '(+94) 70 373 3484',
+    email: 'gwtiromigunarathne@gmail.com',
+    image: '/tiromi.jpeg',
+    imagePosition: 'center 20%',
+  },
+  {
+    name: 'Tharusha Jayasooriya',
+    role: 'Vice Chair - PV Team',
+    organization: 'IEEE Innovation Nation Sri Lanka 2026',
+    phone: '(+94) 72 810 3079',
+    email: 'tharushamjayasooriya@gmail.com',
+    image: '/tharusha.jpg',
+    imagePosition: 'center 20%',
+  }
 ];
 
 export default function Team() {
@@ -50,10 +77,6 @@ export default function Team() {
 
       {/* Meet the Team */}
       <section className="relative w-full min-h-screen flex flex-col justify-center overflow-hidden">
-        {/* Background Split */}
-        <div className="absolute top-0 left-0 w-full h-[55%] bg-[#0c0325] z-0" />
-        <div className="absolute bottom-0 left-0 w-full h-[45%] bg-[#4b32a8] z-0" />
-
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 pt-40 pb-32">
           <div className="mb-16">
             <h2 className="text-3xl md:text-5xl font-semibold text-white mb-4">
@@ -64,7 +87,7 @@ export default function Team() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl">
+          <div className="flex flex-wrap justify-center gap-6 lg:gap-8 max-w-5xl mx-auto">
             {teamMembers.map((member, idx) => (
               <motion.div
                 key={member.name}
@@ -72,7 +95,7 @@ export default function Team() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.2)] bg-[#1a1a24]"
+                className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.2)] bg-[#1a1a24] w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm"
               >
                 {/* Image Top Half */}
                 <div className="relative w-full aspect-[4/3] bg-[#0c0325]">

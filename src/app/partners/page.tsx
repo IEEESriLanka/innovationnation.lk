@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export default function Partners() {
   const partnersData = [
-    { files: ['organized-by.png'], title: 'Organized By' },
     { files: ['investment-partner.png'], title: 'Investment Partner', bgWhite: true },
+    { files: ['knowledge-partner.png'], title: 'Knowledge Partner' },
     { files: ['official-digital-media-partner.png'], title: 'Official Digital Media Partner' },
     { files: ['regional-partner-1.png', 'regional-partner-2.png', 'regional-partner-3.png'], title: 'Regional Partners' }
   ];
