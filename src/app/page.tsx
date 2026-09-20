@@ -21,90 +21,63 @@ const slideshowImages = [
 const competitionSteps = [
   {
     title: 'National Awareness Session',
-    desc: 'Official launch of INSL 2026, introducing the program to university students across Sri Lanka. An expert-led online session engages a wide student audience and encourages inclusive involvement.'
-  },
-  {
-    title: 'Road to INSL Program',
-    desc: 'Prepares participants through awareness and guidance activities before the main competition begins. Builds early understanding of entrepreneurship and strengthens readiness for zonal-level participation.'
+    month: 'April',
+    desc: 'Official launch of INSL 2026, introducing INSL to undergraduates across Sri Lanka.'
   },
   {
     title: 'Zonal Competitions',
-    desc: 'Conducted across four zones covering all IEEE Student Branches in Sri Lanka, with Idea and Business stages. 3 teams per stage from each zone are selected, advancing 24 teams to the Quarter Finals.'
+    month: 'June - August',
+    desc: 'The first stage, where teams compete within their zones'
+  },
+  {
+    title: 'Workshop Series',
+    month: 'September - October',
+    desc: '04 sessions focused on Pitching, Unit Economics, Building a Business, and Marketing.'
   },
   {
     title: 'Quarter Finals',
-    desc: 'Top 24 teams participate in structured workshops to enhance innovation, business, and pitching skills. Evaluations from Idea and Business stages select 12 teams to progress with assigned mentors.'
+    month: 'September - October',
+    desc: 'Selected teams advance to the Semi-Finals.'
   },
   {
-    title: 'Semi Final',
-    desc: 'Top 12 teams compete in Idea and Business stages, presenting refined business solutions to judges. The best 6 teams are selected to advance to the Final Pitch stage.'
+    title: 'Semi-Finals',
+    month: 'November',
+    desc: 'Top teams compete for a place in the Grand Finale'
   },
   {
-    title: 'Final Pitch',
-    desc: 'Top 6 teams deliver final refined pitches to a panel of expert judges. One winner will be selected for each stage: Idea Stage and Business Stage.'
-  },
-  {
-    title: 'Investor Lounge',
-    desc: 'Final stage connecting top startups with investors and industry leaders for exposure. Enables networking, funding opportunities, and potential partnerships for scaling ideas.'
+    title: 'Finals & Investor Lounge',
+    month: 'December',
+    desc: 'Finalists pitch to industry experts and investors on a national platform'
   }
 ];
 
-const teamMembers = [
-  {
-    name: 'Hasidu Fernando',
-    role: 'Chair',
-    organization: 'IEEE Innovation Nation Sri Lanka 2026',
-    phone: '(+94) 70 144 0168',
-    email: 'hasidu.chamoditha234@gmail.com',
-    image: '/hasidu.png',
-    imagePosition: 'center 20%',
-  },
-  {
-    name: 'Shafkhan Mohammed',
-    role: 'Program Vice Chair',
-    organization: 'IEEE Innovation Nation Sri Lanka 2026',
-    phone: '(+94) 76 450 5146',
-    email: 'shafkhan@ieee.org',
-    image: '/shafkan.png',
-    imagePosition: 'center 15%',
-  },
-];
+
 
 const offers = [
   {
-    title: 'Competition',
-    description: 'To recognize achievements, talents, and innovative ideas at a national level',
+    title: 'National-Level Competition',
+    description: 'Showcase your innovative ideas and compete on a national stage.',
     image: '/offers/competition.jpg'
   },
   {
-    title: 'Workshops',
-    description: '',
+    title: 'Expert-Led Workshops',
+    description: 'Gain practical knowledge and skills from industry professionals.',
     image: '/offers/workshops.jpg'
   },
   {
-    title: 'Innovation & Entrepreneurship',
-    description: '',
-    image: '/offers/innovation.jpg'
-  },
-  {
-    title: 'Pitch Deck Mastery',
-    description: '',
-    image: '/offers/pitch-deck.jpg'
-  },
-  {
-    title: 'Mentoring Sessions',
-    description: 'One-on-one sessions with industry experts and domain specialists',
+    title: 'Personalized Mentorship',
+    description: 'Receive one-on-one guidance from domain specialists to refine your business.',
     image: '/offers/mentoring.jpg'
   },
   {
-    title: 'Investment Opportunities',
-    description: 'Access to investor networking and investor lounge opportunities',
-    image: '/offers/investment.jpg'
+    title: 'Networking Opportunities',
+    description: 'Connect with like-minded peers, experienced founders, and industry leaders.',
+    image: '/offers/innovation.jpg'
   },
   {
-    title: 'Weekly Deal Show',
-    description: 'Potential competitors with fundable pitches will get the opportunity to feature in the Weekly Deal Show',
-    image: '/offers/deal-show.jpg'
+    title: 'Investment Opportunities',
+    description: 'Pitch your startup to potential investors and secure funding to scale your idea.',
+    image: '/offers/investment.jpg'
   }
 ];
 
@@ -172,6 +145,7 @@ export default function Home() {
           <Link href="/about-us" className="hover:text-white transition-colors">About Us</Link>
           <Link href="#" className="hover:text-white transition-colors">Events</Link>
           <Link href="/partners" className="hover:text-white transition-colors">Partners</Link>
+          <Link href="/team" className="hover:text-white transition-colors">Team</Link>
         </nav>
 
       </header>
@@ -383,7 +357,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Competition Structure Section */}
+      {/* Competition Timeline Section */}
       <section className="relative w-full py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-[#0c0325] border-t border-white/5 overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-32 relative">
 
@@ -395,7 +369,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-4xl md:text-5xl font-bold text-white uppercase tracking-wider"
             >
-              Competition Structure
+              Competition Timeline
             </motion.h2>
           </div>
 
@@ -409,27 +383,38 @@ export default function Home() {
               className="text-[4rem] xl:text-[6rem] 2xl:text-[6rem] font-black uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#bc71ff] to-[#4b32a8] whitespace-nowrap sticky top-32 leading-none"
               style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
             >
-              Structure <br />
+              Timeline <br />
               Competition
             </motion.h2>
           </div>
 
-          <div className="flex-1 flex flex-col gap-10 ">
+          <div className="flex-1 flex flex-col relative py-4">
+            {/* Vertical connector line */}
+            <div className="absolute left-6 md:left-7 top-10 bottom-10 w-0.5 bg-gradient-to-b from-[#4b32a8] via-[#bc71ff]/30 to-[#0c0325] hidden sm:block z-0" />
+
             {competitionSteps.map((step, idx) => (
               <motion.div
                 key={step.title}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-15% 0px -15% 0px" }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                className="flex gap-6 md:gap-8 group"
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-10% 0px -10% 0px" }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: idx * 0.1 }}
+                className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-10 group relative pb-10 last:pb-0"
               >
-                <div className="text-2xl md:text-3xl font-light text-[#4b32a8] group-hover:text-[#bc71ff] transition-colors mt-1">
+                {/* Number indicator */}
+                <div className="relative z-10 w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-full bg-[#0c0325] border-2 border-[#4b32a8] group-hover:border-[#bc71ff] flex items-center justify-center text-lg md:text-xl font-bold text-[#4b32a8] group-hover:text-[#bc71ff] transition-all duration-300 shadow-[0_0_15px_rgba(75,50,168,0.2)] group-hover:shadow-[0_0_25px_rgba(188,113,255,0.4)]">
                   {String(idx + 1).padStart(2, "0")}
                 </div>
-                <div>
-                  <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">{step.title}</h3>
-                  <p className="text-[#d7cff9]/80 font-light leading-relaxed">{step.desc}</p>
+                
+                {/* Content Card */}
+                <div className="flex flex-col flex-1 bg-gradient-to-r from-[#1a103c]/60 to-transparent p-6 md:p-8 rounded-2xl border border-white/5 group-hover:border-[#bc71ff]/30 transition-all duration-300 backdrop-blur-sm shadow-xl hover:shadow-[0_10px_40px_rgba(188,113,255,0.1)] ml-4 sm:ml-0">
+                  <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 mb-4">
+                    <h3 className="text-xl md:text-2xl font-semibold text-white">{step.title}</h3>
+                    <span className="inline-flex items-center justify-center bg-[#bc71ff]/10 text-[#e9c7ff] text-xs md:text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-[#bc71ff]/30 whitespace-nowrap self-start xl:self-auto shadow-[inset_0_0_10px_rgba(188,113,255,0.1)]">
+                      {step.month}
+                    </span>
+                  </div>
+                  <p className="text-[#d7cff9]/80 font-light leading-relaxed md:text-lg">{step.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -473,102 +458,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Official Partners Section */}
+      {/* Organized By Section */}
       <section className="relative w-full py-24 bg-[#150d2c]">
-        <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24">
-          <h2 className="text-2xl md:text-4xl font-semibold text-center mb-16 text-white">
-            Official Partners
-          </h2>
-          <div className="flex flex-wrap justify-center items-start gap-12 md:gap-16">
-            {[
-              { files: ['organized-by.png'], title: 'Organized By' },
-              { files: ['investment-partner.png'], title: 'Investment Partner', bgWhite: true },
-              { files: ['official-digital-media-partner.png'], title: 'Official Digital Media Partner' },
-              { files: ['regional-partner-1.png', 'regional-partner-2.png', 'regional-partner-3.png'], title: 'Regional Partners' }
-            ].map((partnerGroup, idx) => (
-              <div key={idx} className="flex flex-col items-center">
-                <div className="h-12 flex items-end mb-6">
-                  <p className="text-[#bc71ff] text-xs md:text-sm uppercase tracking-widest text-center">
-                    {partnerGroup.title}
-                  </p>
-                </div>
-                <div className="flex gap-8 items-center justify-center flex-wrap">
-                  {partnerGroup.files.map((file, fileIdx) => (
-                    <div key={fileIdx} className={`relative w-40 md:w-48 h-20 opacity-80 hover:opacity-100 transition-opacity ${partnerGroup.bgWhite ? 'bg-white rounded-xl p-4' : ''}`}>
-                      <Image
-                        src={`/partners/${file}`}
-                        alt={`${partnerGroup.title} ${fileIdx + 1}`}
-                        fill
-                        className="object-contain rounded-xl"
-                        unoptimized
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Meet the Team (Reference 3 style) */}
-      <section className="relative w-full overflow-hidden">
-        {/* Background Split */}
-        <div className="absolute top-0 left-0 w-full h-[55%] bg-[#0c0325] z-0" />
-        <div className="absolute bottom-0 left-0 w-full h-[45%] bg-[#4b32a8] z-0" />
-
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 pt-24 pb-32">
-
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-5xl font-semibold text-white mb-4">
-              People Behind INSL 2026
-            </h2>
-            <p className="text-[#d7cff9] font-light text-lg">
-              Meet the core organizing committee shaping the future of technology.
+        <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 flex flex-col items-center">
+          <div className="h-12 flex items-end mb-6">
+            <p className="text-[#bc71ff] text-xs md:text-sm uppercase tracking-widest text-center">
+              Organized By
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl">
-            {teamMembers.map((member, idx) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.2)] bg-[#1a1a24]"
-              >
-                {/* Image Top Half */}
-                <div className="relative w-full aspect-[4/3] bg-[#0c0325]">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                    style={{ objectPosition: member.imagePosition }}
-                  />
-                </div>
-
-                {/* Content Bottom Half */}
-                <div className="p-8 md:p-10 bg-[#1f1f2e] flex flex-col flex-1 border-t-2 border-[#bc71ff]/50">
-                  <h3 className="text-xl md:text-2xl font-semibold text-white mb-1">{member.name}</h3>
-                  <p className="text-[#d7cff9] text-sm mb-6 font-medium">{member.role}</p>
-
-                  <p className="text-white/70 text-sm font-light mb-6 flex-1">
-                    {member.organization}
-                  </p>
-
-                  <div className="flex flex-col gap-2 text-sm text-white/50 font-light mt-auto">
-                    <span>{member.email}</span>
-                    <span>{member.phone}</span>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+          <div className="flex gap-8 md:gap-12 items-center justify-center">
+            <div className="relative w-56 md:w-72 h-28 md:h-32 opacity-80 hover:opacity-100 transition-opacity">
+              <Image
+                src="/partners/organized-by.png"
+                alt="Organized By"
+                fill
+                className="object-contain rounded-xl"
+                unoptimized
+              />
+            </div>
+            <div className="relative w-56 md:w-72 h-28 md:h-32 opacity-80 hover:opacity-100 transition-opacity">
+              <Image
+                src="/logo.png"
+                alt="INSL Logo"
+                fill
+                className="object-contain rounded-xl"
+                unoptimized
+              />
+            </div>
           </div>
-
         </div>
       </section>
+
+
 
       {/* Footer Section */}
       <footer className="relative w-full bg-[#0c0325] pt-20 pb-10 px-6 md:px-16 lg:px-24 border-t border-[#bc71ff]/20">
@@ -596,6 +517,7 @@ export default function Home() {
               <Link href="/about-us" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">About Us</Link>
               <Link href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Events</Link>
               <Link href="/partners" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Partners</Link>
+              <Link href="/team" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Team</Link>
             </div>
 
             <div className="flex flex-col gap-5">
