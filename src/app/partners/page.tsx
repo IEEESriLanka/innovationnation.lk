@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Header from "@/components/Header";
 
 export default function Partners() {
   const partnersData = [
@@ -12,26 +13,7 @@ export default function Partners() {
   return (
     <main className="bg-[#0c0325] min-h-screen w-full overflow-x-hidden text-white selection:bg-[#bc71ff] selection:text-white">
       {/* Navbar/Header */}
-      <header className="absolute top-0 left-0 w-full z-50 px-6 py-8 md:px-16 lg:px-24 flex items-center justify-between">
-        <Link href="/">
-          <Image
-            src="/logo.png"
-            alt="INSL logo"
-            width={120}
-            height={42}
-            className="object-contain"
-            priority
-          />
-        </Link>
-        <nav className="hidden lg:flex gap-12 text-[11px] font-bold tracking-[0.2em] uppercase text-white/80">
-          <Link href="/" className="hover:text-white transition-colors">Home</Link>
-          <Link href="/about-us" className="hover:text-white transition-colors">About Us</Link>
-          <Link href="#" className="hover:text-white transition-colors">Events</Link>
-          <Link href="/partners" className="text-white hover:text-white transition-colors">Partners</Link>
-          <Link href="/team" className="hover:text-white transition-colors">Team</Link>
-          <Link href="/glimpse-of-insl" className="hover:text-white transition-colors">Glimpse of INSL</Link>
-        </nav>
-      </header>
+      <Header activePage="partners" />
 
       {/* Hero Section */}
       <section className="relative w-full pt-48 pb-32 px-6 md:px-16 lg:px-24">

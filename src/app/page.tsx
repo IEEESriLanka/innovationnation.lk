@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import Header from "@/components/Header";
 
 // Figma asset URLs
 const imgWhatWeOffer = "/final-pitch.jpg";
@@ -129,27 +130,7 @@ export default function Home() {
     <main className="bg-[#0c0325] min-h-screen w-full overflow-x-hidden text-white selection:bg-[#bc71ff] selection:text-white">
 
       {/* Navbar/Header */}
-      <header className="absolute top-0 left-0 w-full z-50 px-6 py-8 md:px-16 lg:px-24 flex items-center justify-between">
-        <Link href="/">
-          <Image
-            src="/logo.png"
-            alt="INSL logo"
-            width={120}
-            height={42}
-            className="object-contain"
-            priority
-          />
-        </Link>
-        <nav className="hidden lg:flex gap-12 text-[11px] font-bold tracking-[0.2em] uppercase text-white/80">
-          <Link href="/" className="text-white hover:text-white transition-colors">Home</Link>
-          <Link href="/about-us" className="hover:text-white transition-colors">About Us</Link>
-          <Link href="#" className="hover:text-white transition-colors">Events</Link>
-          <Link href="/partners" className="hover:text-white transition-colors">Partners</Link>
-          <Link href="/team" className="hover:text-white transition-colors">Team</Link>
-          <Link href="/glimpse-of-insl" className="hover:text-white transition-colors">Glimpse of INSL</Link>
-        </nav>
-
-      </header>
+      <Header activePage="home" />
 
       {/* Hero Section */}
       <section className="relative w-full h-screen flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-16 lg:px-24 overflow-hidden">
@@ -456,6 +437,53 @@ export default function Home() {
               <p>Just bring your idea and let&apos;s build it together.</p>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Glimpse of INSL Preview Section */}
+      <section className="relative w-full py-24 px-6 md:px-16 lg:px-24 bg-[#0c0325] overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col items-center">
+          <div className="flex flex-col md:flex-row w-full justify-between items-end mb-12 gap-6">
+            <div>
+              <h2 className="text-3xl md:text-5xl font-semibold text-white mb-4">
+                A Glimpse of <span className="text-[#bc71ff]">INSL</span>
+              </h2>
+              <p className="text-white/60 font-light max-w-lg">
+                Relive the most memorable moments, inspiring pitches, and collaborative energy from our past events.
+              </p>
+            </div>
+            <Link 
+              href="/glimpse-of-insl" 
+              className="group flex items-center gap-3 bg-[#150d2c] hover:bg-[#1a103c] border border-[#bc71ff]/30 hover:border-[#bc71ff] px-6 py-3 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(188,113,255,0.1)] hover:shadow-[0_0_25px_rgba(188,113,255,0.3)] shrink-0"
+            >
+              <span className="text-[#e9c7ff] text-sm font-medium tracking-wide uppercase">Browse All</span>
+              <svg className="w-4 h-4 text-[#bc71ff] group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
+            {[12, 7, 3, 11].map((imgNum, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden group border border-white/5 shadow-lg bg-[#0c0325]"
+              >
+                <Image 
+                  src={`/slideshow/${imgNum}.jpg`}
+                  alt={`Glimpse ${idx + 1}`}
+                  fill
+                  sizes="(max-width: 640px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0c0325]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
