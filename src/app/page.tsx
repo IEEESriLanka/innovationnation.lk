@@ -514,7 +514,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-16 lg:gap-32">
             <div className="flex flex-col gap-5">
               <h4 className="text-white font-bold tracking-[0.2em] uppercase text-xs mb-2">Explore</h4>
-              <Link href="/" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Home</Link>
+              <Link href="/" className="text-[#bc71ff] hover:text-[#bc71ff] transition-colors text-sm font-light">Home</Link>
               <Link href="/about-us" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">About Us</Link>
               <Link href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Events</Link>
               <Link href="/partners" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Partners</Link>
