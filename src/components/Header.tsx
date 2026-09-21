@@ -32,7 +32,7 @@ export default function Header({ activePage }: { activePage: string }) {
         <nav className="hidden lg:flex gap-12 text-[11px] font-bold tracking-[0.2em] uppercase text-white/80">
           <Link href="/" className={`${getLinkClass("home")} transition-colors`}>Home</Link>
           <Link href="/about-us" className={`${getLinkClass("about")} transition-colors`}>About Us</Link>
-          <Link href="#" className="hover:text-white transition-colors">Events</Link>
+          <Link href="/events" className={`${getLinkClass("events")} transition-colors`}>Events</Link>
           <Link href="/partners" className={`${getLinkClass("partners")} transition-colors`}>Partners</Link>
           <Link href="/team" className={`${getLinkClass("team")} transition-colors`}>Team</Link>
           <Link href="/glimpse-of-insl" className={`${getLinkClass("glimpse")} transition-colors`}>Glimpse of INSL</Link>
@@ -71,7 +71,7 @@ export default function Header({ activePage }: { activePage: string }) {
             <nav className="flex flex-col items-center gap-8 text-xl font-bold tracking-[0.2em] uppercase">
               <Link href="/" onClick={() => setIsOpen(false)} className={`${getMobileLinkClass("home")} transition-colors`}>Home</Link>
               <Link href="/about-us" onClick={() => setIsOpen(false)} className={`${getMobileLinkClass("about")} transition-colors`}>About Us</Link>
-              <Link href="#" onClick={() => setIsOpen(false)} className="text-white/80 hover:text-white transition-colors">Events</Link>
+              <Link href="/events" onClick={() => setIsOpen(false)} className={`${getMobileLinkClass("events")} transition-colors`}>Events</Link>
               <Link href="/partners" onClick={() => setIsOpen(false)} className={`${getMobileLinkClass("partners")} transition-colors`}>Partners</Link>
               <Link href="/team" onClick={() => setIsOpen(false)} className={`${getMobileLinkClass("team")} transition-colors`}>Team</Link>
               <Link href="/glimpse-of-insl" onClick={() => setIsOpen(false)} className={`${getMobileLinkClass("glimpse")} transition-colors`}>Glimpse of INSL</Link>

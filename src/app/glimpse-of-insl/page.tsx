@@ -114,7 +114,7 @@ export default function GlimpseOfInsl() {
               <h4 className="text-white font-bold tracking-[0.2em] uppercase text-xs mb-2">Explore</h4>
               <Link href="/" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Home</Link>
               <Link href="/about-us" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">About Us</Link>
-              <Link href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Events</Link>
+              <Link href="/events" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Events</Link>
               <Link href="/partners" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Partners</Link>
               <Link href="/team" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Team</Link>
               <Link href="/glimpse-of-insl" className="text-[#bc71ff] hover:text-[#bc71ff] transition-colors text-sm font-light">Glimpse of INSL</Link>
