@@ -27,14 +27,14 @@ export default function Header({ activePage }: { activePage: string }) {
             priority
           />
         </Link>
-        
+
         {/* Desktop Nav */}
         <nav className="hidden lg:flex gap-12 text-[11px] font-bold tracking-[0.2em] uppercase text-white/80">
           <Link href="/" className={`${getLinkClass("home")} transition-colors`}>Home</Link>
           <Link href="/about-us" className={`${getLinkClass("about")} transition-colors`}>About Us</Link>
           <Link href="/events" className={`${getLinkClass("events")} transition-colors`}>Events</Link>
           <Link href="/partners" className={`${getLinkClass("partners")} transition-colors`}>Partners</Link>
-          <Link href="/team" className={`${getLinkClass("team")} transition-colors`}>Team</Link>
+          <Link href="/team" className={`${getLinkClass("team")} transition-colors`}>Our Team</Link>
           <Link href="/glimpse-of-insl" className={`${getLinkClass("glimpse")} transition-colors`}>Glimpse of INSL</Link>
         </nav>
 

@@ -38,7 +38,7 @@ const competitionSteps = [
   },
   {
     title: 'Quarter Finals',
-    month: 'September - October',
+    month: 'October',
     desc: 'Selected teams advance to the Semi-Finals.'
   },
   {
@@ -396,7 +396,7 @@ export default function Home() {
                 <div className="relative z-10 w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-full bg-[#0c0325] border-2 border-[#4b32a8] group-hover:border-[#bc71ff] flex items-center justify-center text-lg md:text-xl font-bold text-[#4b32a8] group-hover:text-[#bc71ff] transition-all duration-300 shadow-[0_0_15px_rgba(75,50,168,0.2)] group-hover:shadow-[0_0_25px_rgba(188,113,255,0.4)]">
                   {String(idx + 1).padStart(2, "0")}
                 </div>
-                
+
                 {/* Content Card */}
                 <div className="flex flex-col flex-1 bg-gradient-to-r from-[#1a103c]/60 to-transparent p-6 md:p-8 rounded-2xl border border-white/5 group-hover:border-[#bc71ff]/30 transition-all duration-300 backdrop-blur-sm shadow-xl hover:shadow-[0_10px_40px_rgba(188,113,255,0.1)] ml-4 sm:ml-0">
                   <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 mb-4">
@@ -461,8 +461,8 @@ export default function Home() {
                 Join our upcoming workshops, sessions, and competitions to fuel your entrepreneurial journey.
               </p>
             </div>
-            <Link 
-              href="/events" 
+            <Link
+              href="/events"
               className="group flex items-center gap-3 bg-[#150d2c] hover:bg-[#1a103c] border border-[#bc71ff]/30 hover:border-[#bc71ff] px-6 py-3 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(188,113,255,0.1)] hover:shadow-[0_0_25px_rgba(188,113,255,0.3)] shrink-0"
             >
               <span className="text-[#e9c7ff] text-sm font-medium tracking-wide uppercase">Browse All</span>
@@ -528,8 +528,8 @@ export default function Home() {
                 Relive the most memorable moments, inspiring pitches, and collaborative energy from our past events.
               </p>
             </div>
-            <Link 
-              href="/glimpse-of-insl" 
+            <Link
+              href="/glimpse-of-insl"
               className="group flex items-center gap-3 bg-[#150d2c] hover:bg-[#1a103c] border border-[#bc71ff]/30 hover:border-[#bc71ff] px-6 py-3 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(188,113,255,0.1)] hover:shadow-[0_0_25px_rgba(188,113,255,0.3)] shrink-0"
             >
               <span className="text-[#e9c7ff] text-sm font-medium tracking-wide uppercase">Browse All</span>
@@ -549,7 +549,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden group border border-white/5 shadow-lg bg-[#0c0325]"
               >
-                <Image 
+                <Image
                   src={`/slideshow/${imgNum}.jpg`}
                   alt={`Glimpse ${idx + 1}`}
                   fill
@@ -599,7 +599,7 @@ export default function Home() {
       {/* Footer Section */}
       <footer className="relative w-full bg-[#0c0325] pt-20 pb-10 px-6 md:px-16 lg:px-24 border-t border-[#bc71ff]/20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16 md:gap-8">
-          
+
           {/* Brand/Logo Area */}
           <div className="flex flex-col gap-6 max-w-sm">
             <Image

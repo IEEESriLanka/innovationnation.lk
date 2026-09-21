@@ -4,8 +4,8 @@ import Header from "@/components/Header";
 
 export default function Partners() {
   const partnersData = [
-    { files: ['investment-partner.png'], title: 'Investment Partner', bgWhite: true },
-    { files: ['knowledge-partner.png'], title: 'Knowledge Partner' },
+    { files: ['investment-partner.png'], title: 'Official Investment Partner', bgWhite: true },
+    { files: ['knowledge-partner.png'], title: 'Exclusive Knowledge Partner' },
     { files: ['official-digital-media-partner.png'], title: 'Official Digital Media Partner' },
     { files: ['regional-partner-1.png', 'regional-partner-2.png', 'regional-partner-3.png'], title: 'Regional Partners' }
   ];

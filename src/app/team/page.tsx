@@ -30,7 +30,7 @@ const teamMembers = [
     organization: 'IEEE Innovation Nation Sri Lanka 2026',
     phone: '(+94) 71 654 2724',
     email: 'sanugidwickramasinghe@gmail.com',
-    image: '/sanugi.jpg',
+    image: '/sanugi.png',
     imagePosition: 'center 20%',
   },
   {
@@ -48,7 +48,7 @@ const teamMembers = [
     organization: 'IEEE Innovation Nation Sri Lanka 2026',
     phone: '(+94) 72 810 3079',
     email: 'tharushamjayasooriya@gmail.com',
-    image: '/tharusha.jpg',
+    image: '/tharusha.png',
     imagePosition: 'center 20%',
   }
 ];
@@ -71,15 +71,54 @@ export default function Team() {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 lg:gap-8 max-w-5xl mx-auto">
-            {teamMembers.map((member, idx) => (
+          {/* Hasidu - Top Center */}
+          <div className="flex justify-center mb-12 lg:mb-16">
+            <motion.div
+              key={teamMembers[0].name}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.2)] bg-[#1a1a24] w-full md:w-80 lg:w-96 max-w-sm"
+            >
+              {/* Image Top Half */}
+              <div className="relative w-full aspect-[4/3] bg-[#0c0325]">
+                <Image
+                  src={teamMembers[0].image}
+                  alt={teamMembers[0].name}
+                  fill
+                  className="object-cover"
+                  style={{ objectPosition: teamMembers[0].imagePosition }}
+                />
+              </div>
+
+              {/* Content Bottom Half */}
+              <div className="p-8 md:p-10 bg-[#1f1f2e] flex flex-col flex-1 border-t-2 border-[#bc71ff]/50">
+                <h3 className="text-xl md:text-2xl font-semibold text-white mb-1">{teamMembers[0].name}</h3>
+                <p className="text-[#d7cff9] text-sm mb-6 font-medium">{teamMembers[0].role}</p>
+
+                <p className="text-white/70 text-sm font-light mb-6 flex-1">
+                  {teamMembers[0].organization}
+                </p>
+
+                <div className="flex flex-col gap-2 text-sm text-white/50 font-light mt-auto">
+                  <span>{teamMembers[0].email}</span>
+                  <span>{teamMembers[0].phone}</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Rest of the team - 4 in a row */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl mx-auto">
+            {teamMembers.slice(1).map((member, idx) => (
               <motion.div
                 key={member.name}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.2)] bg-[#1a1a24] w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm"
+                transition={{ duration: 0.6, delay: (idx + 1) * 0.1 }}
+                className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.2)] bg-[#1a1a24] w-full"
               >
                 {/* Image Top Half */}
                 <div className="relative w-full aspect-[4/3] bg-[#0c0325]">
@@ -93,16 +132,16 @@ export default function Team() {
                 </div>
 
                 {/* Content Bottom Half */}
-                <div className="p-8 md:p-10 bg-[#1f1f2e] flex flex-col flex-1 border-t-2 border-[#bc71ff]/50">
-                  <h3 className="text-xl md:text-2xl font-semibold text-white mb-1">{member.name}</h3>
-                  <p className="text-[#d7cff9] text-sm mb-6 font-medium">{member.role}</p>
+                <div className="p-6 xl:p-8 bg-[#1f1f2e] flex flex-col flex-1 border-t-2 border-[#bc71ff]/50">
+                  <h3 className="text-lg xl:text-xl font-semibold text-white mb-1">{member.name}</h3>
+                  <p className="text-[#d7cff9] text-xs xl:text-sm mb-4 font-medium">{member.role}</p>
 
-                  <p className="text-white/70 text-sm font-light mb-6 flex-1">
+                  <p className="text-white/70 text-xs xl:text-sm font-light mb-4 flex-1">
                     {member.organization}
                   </p>
 
-                  <div className="flex flex-col gap-2 text-sm text-white/50 font-light mt-auto">
-                    <span>{member.email}</span>
+                  <div className="flex flex-col gap-1 text-[11px] xl:text-xs text-white/50 font-light mt-auto">
+                    <span className="truncate" title={member.email}>{member.email}</span>
                     <span>{member.phone}</span>
                   </div>
                 </div>
@@ -111,11 +150,11 @@ export default function Team() {
           </div>
         </div>
       </section>
-      
+
       {/* Footer Section */}
       <footer className="relative w-full bg-[#0c0325] pt-20 pb-10 px-6 md:px-16 lg:px-24 border-t border-[#bc71ff]/20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16 md:gap-8">
-          
+
           {/* Brand/Logo Area */}
           <div className="flex flex-col gap-6 max-w-sm">
             <Image
