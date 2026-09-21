@@ -1,0 +1,3677 @@
+{
+    "initialEvents": [
+        {
+            "id": 115,
+            "effectiveEndDate": "2026-09-17T23:59:59.999Z",
+            "title": "Workshop 02: Mastering Unit Economics",
+            "slug": "insl-workshop-2",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Workshop 02: Mastering Unit Economics",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "A great idea needs to make financial sense. Workshop 02 of IEEE Innovation Nation Sri Lanka 2026 is designed to help university innovators understand the financial fundamentals behind their ideas and make informed business decisions.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Led by Mr. Chaminda Amarasekera, Director of Synergy by Y & C, the session will cover practical concepts including pricing, costs, profit margins, and unit economics, helping participants evaluate the financial potential of their ideas.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Date: 16th September 2026",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Time: 8:00 PM onwards",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Platform: Zoom",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Join us to explore the numbers behind your idea, strengthen your business thinking, and take your idea one step further. 📊",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2026-09-16T11:30:00.000Z",
+            "endDate": "2026-09-17T11:30:00.000Z",
+            "startTime": "2026-09-12T14:30:00.000Z",
+            "endTime": null,
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "online",
+            "venueLocation": null,
+            "onlinePlatform": "zoom",
+            "organizers": [],
+            "image": {
+                "id": 783,
+                "alt": "INSL (2)",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1789227408/ieeeypsl/insl/INSL%20%282%29.png",
+                "cloudinaryPublicId": "ieeeypsl/insl/INSL (2)",
+                "subfolder": null,
+                "updatedAt": "2026-09-12T15:36:49.481Z",
+                "createdAt": "2026-09-12T15:36:49.480Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1789227408/ieeeypsl/insl/INSL%20%282%29.png",
+                "thumbnailURL": "/api/media/file/INSL%20(2)-400x300.png",
+                "filename": "INSL (2).png",
+                "mimeType": "image/png",
+                "filesize": 1465282,
+                "width": 1080,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/INSL (2)",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/INSL (2)",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/INSL (2)",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": "https://forms.gle/z9fFvH6cG97AZpqe9",
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE #IEEEYP #IEEESL #IEEEYPSL #INSL2026",
+            "updatedAt": "2026-09-12T15:37:24.884Z",
+            "createdAt": "2026-09-12T15:37:24.883Z",
+            "_status": "published"
+        },
+        {
+            "id": 114,
+            "effectiveEndDate": "2026-09-02T23:59:59.999Z",
+            "title": "𝗜𝗡𝗦𝗟 𝟮𝟬𝟮𝟲 𝗪𝗼𝗿𝗸𝘀𝗵𝗼𝗽 𝟬𝟭 - 𝗛𝗼𝘄 𝘁𝗼 𝗣𝗶𝘁𝗰𝗵 𝘁𝗼 𝗜𝗻𝘃𝗲𝘀𝘁𝗼𝗿𝘀 𝗟𝗶𝗸𝗲 𝗮 𝗣𝗿𝗼",
+            "slug": "insl-workshop-1",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Workshop 01: How to Pitch to Investors Like a Pro",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "A great idea needs a great pitch. Workshop 01 of IEEE Innovation Nation Sri Lanka 2026 is designed to help early-stage university entrepreneurs learn how to structure, communicate, and deliver a compelling pitch to investors.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Led by Mr. Shaun Zelber, CEO of Beyond Technologies, the session will cover practical approaches to telling a clear problem-solution story, highlighting market opportunities and traction, and avoiding common mistakes when pitching to investors. ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Date: 2nd September 2026",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Time: 7:30 PM onwards",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Platform: Zoom",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Join us to sharpen your pitch, communicate your ideas with confidence, and learn what it takes to make an impact on investors. 🚀",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2026-09-02T11:30:00.000Z",
+            "endDate": null,
+            "startTime": "1990-01-01T14:00:00.000Z",
+            "endTime": null,
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "online",
+            "venueLocation": null,
+            "onlinePlatform": "zoom",
+            "organizers": [
+                {
+                    "id": 4,
+                    "name": "Innovation Nation Sri Lanka",
+                    "logo": {
+                        "id": 81,
+                        "alt": "Insl Logo",
+                        "category": "insl",
+                        "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770787226/ieeeypsl/insl/insl-logo.png",
+                        "cloudinaryPublicId": "ieeeypsl/insl/insl-logo",
+                        "subfolder": null,
+                        "updatedAt": "2026-02-11T05:20:27.261Z",
+                        "createdAt": "2026-02-11T05:20:27.261Z",
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770787226/ieeeypsl/insl/insl-logo.png",
+                        "thumbnailURL": "/api/media/file/insl-logo-400x300.png",
+                        "filename": "insl-logo.png",
+                        "mimeType": "image/png",
+                        "filesize": 156777,
+                        "width": 1200,
+                        "height": 1200,
+                        "focalX": 50,
+                        "focalY": 50,
+                        "sizes": {
+                            "thumbnail": {
+                                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/insl-logo",
+                                "width": 400,
+                                "height": 300
+                            },
+                            "card": {
+                                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/insl-logo",
+                                "width": 768,
+                                "height": 1024
+                            },
+                            "tablet": {
+                                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/insl-logo",
+                                "width": 1024
+                            }
+                        }
+                    },
+                    "website": null,
+                    "updatedAt": "2026-02-11T07:43:23.418Z",
+                    "createdAt": "2026-02-11T07:43:23.417Z"
+                }
+            ],
+            "image": {
+                "id": 665,
+                "alt": "Ambassador   2026 08 26T105227.586",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1787721915/ieeeypsl/insl/Ambassador%20-%202026-08-26T105227.586.png",
+                "cloudinaryPublicId": "ieeeypsl/insl/Ambassador - 2026-08-26T105227.586",
+                "subfolder": null,
+                "updatedAt": "2026-08-26T05:25:16.288Z",
+                "createdAt": "2026-08-26T05:25:16.287Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1787721915/ieeeypsl/insl/Ambassador%20-%202026-08-26T105227.586.png",
+                "thumbnailURL": "/api/media/file/Ambassador%20-%202026-08-26T105227.586-400x300.png",
+                "filename": "Ambassador - 2026-08-26T105227.586.png",
+                "mimeType": "image/png",
+                "filesize": 1456594,
+                "width": 1080,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/Ambassador - 2026-08-26T105227.586",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/Ambassador - 2026-08-26T105227.586",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/Ambassador - 2026-08-26T105227.586",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": "https://forms.gle/wZ2GsQHG1RwVNxKw7",
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE #IEEEYP #IEEESL #IEEEYPSL #INSL2026",
+            "updatedAt": "2026-08-26T05:28:23.982Z",
+            "createdAt": "2026-08-26T05:26:18.616Z",
+            "_status": "published"
+        },
+        {
+            "id": 94,
+            "effectiveEndDate": null,
+            "title": "𝗜𝗡𝗦𝗟 𝟮𝟬𝟮𝟲 𝗭𝗼𝗻𝗮𝗹 𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝗼𝗻𝘀",
+            "slug": "insl-zonal-2026",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "𝗜𝗘𝗘𝗘 𝗜𝗻𝗻𝗼𝘃𝗮𝘁𝗶𝗼𝗻 𝗡𝗮𝘁𝗶𝗼𝗻 𝗦𝗿𝗶 𝗟𝗮𝗻𝗸𝗮 (𝗜𝗡𝗦𝗟) 𝟮𝟬𝟮𝟲 𝗭𝗼𝗻𝗮𝗹 𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝗼𝗻𝘀 mark the first stage of Sri Lanka’s premier undergraduate innovation and entrepreneurship competition. ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Conducted across 𝗳𝗼𝘂𝗿 𝘇𝗼𝗻𝗲𝘀, the competition provides a platform for students to showcase innovative ideas and startup solutions under the 𝗜𝗱𝗲𝗮 𝗦𝘁𝗮𝗴𝗲 and 𝗕𝘂𝘀𝗶𝗻𝗲𝘀𝘀 𝗦𝘁𝗮𝗴𝗲 categories.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Participants will gain valuable exposure, feedback from industry experts, and the opportunity to advance to the Quarter Finals, Semi Finals, and Grand Finale of INSL 2026.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2026-06-20T11:30:00.000Z",
+            "endDate": null,
+            "startTime": null,
+            "endTime": null,
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "physical",
+            "venueLocation": null,
+            "onlinePlatform": null,
+            "organizers": [],
+            "image": {
+                "id": 395,
+                "alt": "Zonal Comp Reg Open",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1778422978/ieeeypsl/insl/zonal-comp-reg-open.png",
+                "cloudinaryPublicId": "ieeeypsl/insl/zonal-comp-reg-open",
+                "subfolder": null,
+                "updatedAt": "2026-05-10T14:22:59.151Z",
+                "createdAt": "2026-05-10T14:22:59.151Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1778422978/ieeeypsl/insl/zonal-comp-reg-open.png",
+                "thumbnailURL": "/api/media/file/zonal-comp-reg-open-400x300.png",
+                "filename": "zonal-comp-reg-open.png",
+                "mimeType": "image/png",
+                "filesize": 1828897,
+                "width": 1080,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/zonal-comp-reg-open",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/zonal-comp-reg-open",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/zonal-comp-reg-open",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfsZuVte4nLg4PZsvRl4K32p3NwopNkCrbQBj25XCA0tNOe3Q/viewform?usp=sharing&ouid=110700544341539719348",
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE #IEEEYP #IEEESL #IEEEYPSL #INSL2026",
+            "updatedAt": "2026-06-11T03:58:39.070Z",
+            "createdAt": "2026-06-11T03:58:39.070Z",
+            "_status": "published"
+        },
+        {
+            "id": 74,
+            "effectiveEndDate": null,
+            "title": " 𝗜𝗡𝗦𝗟 𝟮𝟬𝟮𝟲 𝗔𝘄𝗮𝗿𝗲𝗻𝗲𝘀𝘀 𝗦𝗲𝘀𝘀𝗶𝗼𝗻",
+            "slug": "insl-awareness-session-2026",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "𝗚𝗲𝘁 𝗥𝗲𝗮𝗱𝘆 𝘁𝗼 𝗗𝗶𝘀𝗰𝗼𝘃𝗲𝗿 𝗜𝗡𝗦𝗟 𝟮𝟬𝟮𝟲 🚀",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "The blueprint is ready. The stage is set. Are you?",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Join us for the 𝗜𝗡𝗦𝗟 𝟮𝟬𝟮𝟲 𝗔𝘄𝗮𝗿𝗲𝗻𝗲𝘀𝘀 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 and get a complete overview of the INSL Competition and what it has to offer you! ✨",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "𝗗𝗮𝘁𝗲: 𝟮𝟵𝘁𝗵 𝗔𝗽𝗿𝗶𝗹",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "𝗧𝗶𝗺𝗲: 𝟳.𝟯𝟬 𝗣𝗠",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺: 𝗚𝗼𝗼𝗴𝗹𝗲 𝗠𝗲𝗲𝘁",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🖇️ Follow us for more updates: ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "type": "autolink",
+                                    "fields": {
+                                        "url": "https://linktr.ee/INSL2026",
+                                        "linkType": "custom"
+                                    },
+                                    "format": "",
+                                    "indent": 0,
+                                    "version": 2,
+                                    "children": [
+                                        {
+                                            "mode": "normal",
+                                            "text": "https://linktr.ee/INSL2026",
+                                            "type": "text",
+                                            "style": "",
+                                            "detail": 0,
+                                            "format": 0,
+                                            "version": 1
+                                        }
+                                    ],
+                                    "direction": null
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Set your reminders and get ready to take the first step toward innovation! 🔥",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2026-04-29T11:30:00.000Z",
+            "endDate": null,
+            "startTime": "2026-04-25T14:00:00.000Z",
+            "endTime": null,
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "online",
+            "venueLocation": null,
+            "onlinePlatform": "google-meet",
+            "organizers": [
+                "$5:props:children:props:children:1:props:initialEvents:3:organizers:0"
+            ],
+            "image": {
+                "id": 381,
+                "alt": "INSL Awareness session flyer",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1777115203/ieeeypsl/insl/Ambassador%20%2830%29.png",
+                "cloudinaryPublicId": "ieeeypsl/insl/Ambassador (30)",
+                "subfolder": null,
+                "updatedAt": "2026-04-25T11:06:43.514Z",
+                "createdAt": "2026-04-25T11:06:43.514Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1777115203/ieeeypsl/insl/Ambassador%20%2830%29.png",
+                "thumbnailURL": "/api/media/file/Ambassador%20(30)-400x300.png",
+                "filename": "Ambassador (30).png",
+                "mimeType": "image/png",
+                "filesize": 2107046,
+                "width": 1080,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/Ambassador (30)",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/Ambassador (30)",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/Ambassador (30)",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": null,
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE  #IEEEYP  #IEEESL  #IEEEYPSL  #INSL2026",
+            "updatedAt": "2026-04-25T11:07:39.620Z",
+            "createdAt": "2026-04-25T11:07:39.620Z",
+            "_status": "published"
+        },
+        {
+            "id": 45,
+            "effectiveEndDate": null,
+            "title": "INSL Hustle Stories Limited Edition 4",
+            "slug": "hustlestories_le4",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "tag": "h2",
+                            "type": "heading",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🔥 Limited Edition 4 – Stories that Grow & Inspire!  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Meet Ms. Miyuli Kalubowila — a passionate social entrepreneur and founder of Generation Alpha, driving meaningful change through sustainable innovation and purpose-led leadership. 💫",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Join us for an inspiring evening of real-world impact, startup insights, and the story behind building a purpose-driven venture.  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "tag": "h3",
+                            "type": "heading",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": " ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "📍 Third Place, Bay 09 – TRACE Expert City  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🗓️ August 22nd | Friday | 6 PM onwards  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🎤 Personal Networking | Social Impact Stories | Live Q&A  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "tag": "h3",
+                            "type": "heading",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": " ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "⚠️ Only 7 Exclusive for INSL Community!  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null,
+                    "textFormat": 1
+                }
+            },
+            "startDate": "2025-08-22T11:30:00.000Z",
+            "endDate": null,
+            "startTime": "2026-02-11T12:30:00.000Z",
+            "endTime": "2026-02-11T14:30:00.000Z",
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "physical",
+            "venueLocation": "Third Place, Bay 9,TRACE Expert City, Colombo 10",
+            "onlinePlatform": null,
+            "organizers": [
+                "$5:props:children:props:children:1:props:initialEvents:3:organizers:0"
+            ],
+            "image": {
+                "id": 126,
+                "alt": "Hustlestories Le4",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770829002/ieeeypsl/insl/hustlestories_le4.jpg",
+                "cloudinaryPublicId": "ieeeypsl/insl/hustlestories_le4",
+                "subfolder": null,
+                "updatedAt": "2026-02-11T16:56:43.027Z",
+                "createdAt": "2026-02-11T16:56:43.027Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770829002/ieeeypsl/insl/hustlestories_le4.jpg",
+                "thumbnailURL": "/api/media/file/hustlestories_le4-400x300.jpg",
+                "filename": "hustlestories_le4.jpg",
+                "mimeType": "image/jpeg",
+                "filesize": 118557,
+                "width": 643,
+                "height": 766,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/hustlestories_le4",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/hustlestories_le4",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/hustlestories_le4",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": "https://forms.gle/yviHgRBRhjBfjXvGA",
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": null,
+            "updatedAt": "2026-02-11T16:56:58.799Z",
+            "createdAt": "2026-02-11T16:56:48.041Z",
+            "_status": "published"
+        },
+        {
+            "id": 43,
+            "effectiveEndDate": null,
+            "title": "INSL Hustle Stories: Limited Edition 3",
+            "slug": "hustlestories_le3",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "tag": "h3",
+                            "type": "heading",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🔥 Limited Edition 3 – Fueling Innovation Through Experience!",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Meet Mr. Adhisha Gammanpila - the visionary founder of Feynman, driving impact through innovation, leadership, and a bold entrepreneurial spirit.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Get ready to dive into the real stories behind the startup journey  the wins, the lessons, and the hustle that makes it all worth it! 🚀",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": " ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "📍 Third Place, Bay 09 – TRACE Expert City",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🗓 August 7th | Thursday | 6 PM onwards",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🎤 Personal Networking | Startup Insights | Live Q&A",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": " ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "⚠ Only 7 exclusive seats for the INSL community! ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null,
+                    "textFormat": 1
+                }
+            },
+            "startDate": "2025-08-07T11:30:00.000Z",
+            "endDate": null,
+            "startTime": "2026-02-11T12:30:00.000Z",
+            "endTime": "2026-02-11T14:30:00.000Z",
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "physical",
+            "venueLocation": "Third Place, Bay 9,TRACE Expert City, Colombo 10",
+            "onlinePlatform": null,
+            "organizers": [
+                "$5:props:children:props:children:1:props:initialEvents:3:organizers:0"
+            ],
+            "image": {
+                "id": 124,
+                "alt": "Hustlestories Le3",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770828398/ieeeypsl/insl/hustlestories_le3.jpg",
+                "cloudinaryPublicId": "ieeeypsl/insl/hustlestories_le3",
+                "subfolder": null,
+                "updatedAt": "2026-02-11T16:46:39.006Z",
+                "createdAt": "2026-02-11T16:46:39.006Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770828398/ieeeypsl/insl/hustlestories_le3.jpg",
+                "thumbnailURL": "/api/media/file/hustlestories_le3-400x300.jpg",
+                "filename": "hustlestories_le3.jpg",
+                "mimeType": "image/jpeg",
+                "filesize": 249237,
+                "width": 1024,
+                "height": 1280,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/hustlestories_le3",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/hustlestories_le3",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/hustlestories_le3",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfCYEoXHhxLdfPhtsWhoXFvukq-8Ig64pH9_UTvq1zDVdj6rQ/viewform?usp=header",
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": null,
+            "updatedAt": "2026-02-11T16:46:45.093Z",
+            "createdAt": "2026-02-11T16:46:45.092Z",
+            "_status": "published"
+        },
+        {
+            "id": 42,
+            "effectiveEndDate": null,
+            "title": "INSL Hustle Stories: Limited Edition 2",
+            "slug": "hustlestories_le2",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🔥 ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "Limited Edition 2 – Syncing Passion with Purpose!",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Meet  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "Ms.Dilini Ekanayaka",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": " — the dynamic",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": " co-founder of Asyncdot",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": ", shaping Sri Lanka’s startup space with bold moves and big vision. ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Come discover the insights, the setbacks, and the hustle behind building a startup that’s making waves! ✨  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "📍 Third Place, Bay 09 – TRACE Expert City  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🗓 July 25th | Friday | 6 PM onwards  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🎤 Personal Networking | Startup Insights | Live Q&A",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": " ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "⚠ ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "Only 10 exclusive seats",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": " for INSL community!  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2025-07-25T11:30:00.000Z",
+            "endDate": null,
+            "startTime": "2026-02-11T12:30:00.000Z",
+            "endTime": "2026-02-11T14:30:00.000Z",
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "physical",
+            "venueLocation": "Third Place, Bay 9,TRACE Expert City, Colombo 10",
+            "onlinePlatform": null,
+            "organizers": [
+                "$5:props:children:props:children:1:props:initialEvents:3:organizers:0"
+            ],
+            "image": {
+                "id": 123,
+                "alt": "Hustlestories Le2",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770828235/ieeeypsl/insl/hustlestories_le2.png",
+                "cloudinaryPublicId": "ieeeypsl/insl/hustlestories_le2",
+                "subfolder": null,
+                "updatedAt": "2026-02-11T16:43:56.082Z",
+                "createdAt": "2026-02-11T16:43:56.082Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770828235/ieeeypsl/insl/hustlestories_le2.png",
+                "thumbnailURL": "/api/media/file/hustlestories_le2-400x300.png",
+                "filename": "hustlestories_le2.png",
+                "mimeType": "image/png",
+                "filesize": 989188,
+                "width": 1080,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/hustlestories_le2",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/hustlestories_le2",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/hustlestories_le2",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": "https://forms.gle/xcdUXLbuHuwDjJ9UA",
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE #INSL2025 #YPSL #InnovationNationSriLanka #EmpowerTheFuture",
+            "updatedAt": "2026-02-11T16:44:00.084Z",
+            "createdAt": "2026-02-11T16:44:00.083Z",
+            "_status": "published"
+        },
+        {
+            "id": 37,
+            "effectiveEndDate": null,
+            "title": "Hustle Story : Limited Edition 1",
+            "slug": "hustlestories_le1",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "tag": "h3",
+                            "type": "heading",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🔥 Hustle Story Limited Edition – From Healing to Hustling!!",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Meet ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "Dr. Dhanushi Hettiarachchi",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": " — a passionate medical doctor turned purpose-driven founder who’s rewriting what it means to lead with heart and hustle. 🩺💡",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "This is your chance to hear how she transformed her medical journey into a startup success story.Join us to discover the mindset, motivation, and moments that shaped her inspiring path. ✨",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "📍 Third Place, Bay 09, TRACE Expert City",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🗓️ 04th July 2025",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🎤 Personal Networking | Startup Insights | Live Q&A",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "⚠️ Only 10 exclusive seats available for INSL community !! ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null,
+                    "textFormat": 1
+                }
+            },
+            "startDate": "2025-07-04T11:30:00.000Z",
+            "endDate": null,
+            "startTime": "2026-02-11T13:30:00.000Z",
+            "endTime": "2026-02-11T14:30:00.000Z",
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "physical",
+            "venueLocation": "Third Place, Bay 9,TRACE Expert City, Colombo 10",
+            "onlinePlatform": null,
+            "organizers": [
+                "$5:props:children:props:children:1:props:initialEvents:3:organizers:0"
+            ],
+            "image": {
+                "id": 118,
+                "alt": "Hustlestories Le1",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770827383/ieeeypsl/insl/hustlestories_le1.jpg",
+                "cloudinaryPublicId": "ieeeypsl/insl/hustlestories_le1",
+                "subfolder": null,
+                "updatedAt": "2026-02-11T16:29:44.205Z",
+                "createdAt": "2026-02-11T16:29:44.205Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770827383/ieeeypsl/insl/hustlestories_le1.jpg",
+                "thumbnailURL": "/api/media/file/hustlestories_le1-400x300.jpg",
+                "filename": "hustlestories_le1.jpeg",
+                "mimeType": "image/jpeg",
+                "filesize": 244708,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/hustlestories_le1",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/hustlestories_le1",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/hustlestories_le1",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": "https://ieeeyp.lk/event/hustlestories_le1",
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE #INSL2025 #YPSL #InnovationNationSriLanka #EmpowerTheFuture",
+            "updatedAt": "2026-02-11T16:29:48.014Z",
+            "createdAt": "2026-02-11T16:29:48.014Z",
+            "_status": "published"
+        },
+        {
+            "id": 34,
+            "effectiveEndDate": null,
+            "title": "Hustle Story 2 : Dilanka Sanjaya, Fonix Solutions",
+            "slug": "hustlestories2",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🌟 Hustle Stories 02 – Featuring FONIX Software Solutions 🌟",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Every great idea begins with a spark — and with passion and persistence, it can grow into something extraordinary. 💡🔥",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Join us for the second session of Hustle Stories as we explore the inspiring journey of FONIX Software Solutions — a startup that turned bold vision into real-world impact.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "📅 Date: 24th May  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "⏰ Time: 7:00 PM  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "💻 Platform: Online",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "tag": "h3",
+                            "type": "heading",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": " ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Whether you're a dreamer, a doer, or a future founder — this story is for you.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🎤 Real stories. Real hustle. Real inspiration.  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Don’t miss it!",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2025-06-21T11:30:00.000Z",
+            "endDate": null,
+            "startTime": "2026-02-11T13:30:00.000Z",
+            "endTime": "2026-02-11T14:30:00.000Z",
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "online",
+            "venueLocation": null,
+            "onlinePlatform": "zoom",
+            "organizers": [
+                "$5:props:children:props:children:1:props:initialEvents:3:organizers:0"
+            ],
+            "image": {
+                "id": 115,
+                "alt": "Hustlestories2",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770826951/ieeeypsl/insl/hustlestories2.jpg",
+                "cloudinaryPublicId": "ieeeypsl/insl/hustlestories2",
+                "subfolder": null,
+                "updatedAt": "2026-02-11T16:22:31.916Z",
+                "createdAt": "2026-02-11T16:22:31.916Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770826951/ieeeypsl/insl/hustlestories2.jpg",
+                "thumbnailURL": "/api/media/file/hustlestories2-400x300.jpg",
+                "filename": "hustlestories2.jpeg",
+                "mimeType": "image/jpeg",
+                "filesize": 179105,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/hustlestories2",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/hustlestories2",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/hustlestories2",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": "https://forms.gle/zV3LDswSm9EmTcFU9",
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE #INSL2025 #YPSL #InnovationNationSriLanka #EmpowerTheFuture",
+            "updatedAt": "2026-02-11T16:22:35.588Z",
+            "createdAt": "2026-02-11T16:22:35.588Z",
+            "_status": "published"
+        },
+        {
+            "id": 11,
+            "effectiveEndDate": null,
+            "title": "IEEE Entrepreneurship 101 Workshop Sri Lanka",
+            "slug": "ieee-entrepreneurship-101",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🚀 Empower Your Vision. Ignite Your Venture. 💡",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Join us in Colombo for the ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "IEEE Entrepreneurship Workshop – Sri Lanka",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": ", where innovation meets strategy! 🧠✨",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "📅",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": " 6th, 7th & 8th of June 2025",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                },
+                                {
+                                    "type": "linebreak",
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "🌍",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": " Organized by IEEE Young Professionals Sri Lanka & IEEE Entrepreneurship",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Get ready to transform ideas into impact — through hands-on sessions, expert insights, and real-world startup strategies.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2025-06-06T11:30:00.000Z",
+            "endDate": "2025-06-08T11:30:00.000Z",
+            "startTime": "2026-02-11T03:30:00.000Z",
+            "endTime": "2026-02-11T12:30:00.000Z",
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "physical",
+            "venueLocation": "Colombo, Sri Lanka",
+            "onlinePlatform": null,
+            "organizers": [
+                "$5:props:children:props:children:1:props:initialEvents:3:organizers:0",
+                "$5:props:children:props:children:1:props:initialEvents:9:organizers:0"
+            ],
+            "image": {
+                "id": 92,
+                "alt": "IN Workshop SL 1",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770820107/ieeeypsl/insl/IN-Workshop-SL-1.png",
+                "cloudinaryPublicId": "ieeeypsl/insl/IN-Workshop-SL-1",
+                "subfolder": null,
+                "updatedAt": "2026-02-11T14:28:28.600Z",
+                "createdAt": "2026-02-11T14:28:28.600Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770820107/ieeeypsl/insl/IN-Workshop-SL-1.png",
+                "thumbnailURL": "/api/media/file/IN-Workshop-SL-1-400x300.png",
+                "filename": "IN-Workshop-SL-1.png",
+                "mimeType": "image/png",
+                "filesize": 977590,
+                "width": 1072,
+                "height": 1350,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/IN-Workshop-SL-1",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/IN-Workshop-SL-1",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/IN-Workshop-SL-1",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": "https://app.smartsheet.com/b/form/8d875892d6b249a2992eb54cf7221302",
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEEEntrepreneurship #IEEEYPSL #InnovationInAction #StartupSriLanka #EntrepreneurMindset",
+            "updatedAt": "2026-02-11T14:29:49.470Z",
+            "createdAt": "2026-02-11T14:29:49.470Z",
+            "_status": "published"
+        },
+        {
+            "id": 26,
+            "effectiveEndDate": null,
+            "title": "Hustle Stories 1 : It Self Automation",
+            "slug": "hustlestories",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🌟 Every Big Idea Starts with a Hustle! 🌟",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "justify",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🚀 Hustle Stories 01 is here — kicking off with the inspiring journey of Itself Automation.  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "justify",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Discover how innovation, passion, and purpose can come together to create real impact in the tech world.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "justify",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Hstle Stories is a series spotlighting the journeys of INSL founders and successful startups. In each edition, entrepreneurs and their teams candidly share their challenges, hard-won lessons, and the strategies they used to overcome obstacles. Their real-world experiences are designed to inspire, guide, and ignite the entrepreneurial spirit in new teams, helping the next generation turn their ideas into impactful ventures. ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🗓️ Date: 24th May  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "⏰ Time: 7:00 PM  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "💻 Platform: Online",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Let this story spark your next big idea! Don’t miss it! ✨",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2025-05-24T11:30:00.000Z",
+            "endDate": null,
+            "startTime": "2026-02-11T13:30:00.000Z",
+            "endTime": "2026-02-11T14:30:00.000Z",
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "online",
+            "venueLocation": null,
+            "onlinePlatform": "zoom",
+            "organizers": [
+                "$5:props:children:props:children:1:props:initialEvents:3:organizers:0"
+            ],
+            "image": {
+                "id": 107,
+                "alt": "Hustlestories",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770823724/ieeeypsl/insl/hustlestories.jpg",
+                "cloudinaryPublicId": "ieeeypsl/insl/hustlestories",
+                "subfolder": null,
+                "updatedAt": "2026-02-11T15:28:45.081Z",
+                "createdAt": "2026-02-11T15:28:45.081Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770823724/ieeeypsl/insl/hustlestories.jpg",
+                "thumbnailURL": "/api/media/file/hustlestories-400x300.jpg",
+                "filename": "hustlestories.jpg",
+                "mimeType": "image/jpeg",
+                "filesize": 107257,
+                "width": 1080,
+                "height": 1080,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/hustlestories",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/hustlestories",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/hustlestories",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": null,
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE #INSL2025 #YPSL #InnovationNationSriLanka #EmpowerTheFuture",
+            "updatedAt": "2026-02-11T15:28:48.805Z",
+            "createdAt": "2026-02-11T15:28:48.805Z",
+            "_status": "published"
+        },
+        {
+            "id": 22,
+            "effectiveEndDate": null,
+            "title": "Application Calling to Innovation Nation Sri Lanka",
+            "slug": "insl-application",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "justify",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🎯",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": " Are You Ready to Innovate, Ignite, and Inspire?",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "justify",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "🚀 Join the ultimate platform to turn your ideas into impact!  ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "justify",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Whether you're a student, aspiring entrepreneur, or innovator — this is your chance to shine.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "type": "linebreak",
+                                    "version": 1
+                                },
+                                {
+                                    "type": "linebreak",
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "INSL Workshops",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                },
+                                {
+                                    "type": "linebreak",
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "▶",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                },
+                                {
+                                    "id": "698c9ca25df216475a025a1e",
+                                    "type": "link",
+                                    "fields": {
+                                        "url": "https://youtu.be/ndQoK86iU0Ahttps://",
+                                        "newTab": true,
+                                        "linkType": "custom"
+                                    },
+                                    "format": "",
+                                    "indent": 0,
+                                    "version": 3,
+                                    "children": [
+                                        {
+                                            "mode": "normal",
+                                            "text": " How to Find an Investable Idea",
+                                            "type": "text",
+                                            "style": "",
+                                            "detail": 0,
+                                            "format": 1,
+                                            "version": 1
+                                        }
+                                    ],
+                                    "direction": null,
+                                    "textFormat": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": " ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                },
+                                {
+                                    "type": "linebreak",
+                                    "version": 1
+                                },
+                                {
+                                    "type": "linebreak",
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "▶ ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                },
+                                {
+                                    "id": "698c9cce5df216475a025a1f",
+                                    "type": "link",
+                                    "fields": {
+                                        "url": "https://youtu.be/tH30TwqoN5M",
+                                        "newTab": true,
+                                        "linkType": "custom"
+                                    },
+                                    "format": "",
+                                    "indent": 0,
+                                    "version": 3,
+                                    "children": [
+                                        {
+                                            "mode": "normal",
+                                            "text": "Convert Your Idea into a Pitch Deck",
+                                            "type": "text",
+                                            "style": "",
+                                            "detail": 0,
+                                            "format": 1,
+                                            "version": 1
+                                        }
+                                    ],
+                                    "direction": null,
+                                    "textFormat": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 1
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "justify",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 1
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "justify",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Bring your vision to life and become a part of Sri Lanka’s innovation journey.💡",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 1,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 1
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null,
+                    "textFormat": 1
+                }
+            },
+            "startDate": "2025-05-06T11:30:00.000Z",
+            "endDate": "2025-07-31T11:30:00.000Z",
+            "startTime": "2026-02-10T18:30:00.000Z",
+            "endTime": "2026-02-11T18:00:00.000Z",
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "online",
+            "venueLocation": null,
+            "onlinePlatform": "zoom",
+            "organizers": [
+                "$5:props:children:props:children:1:props:initialEvents:3:organizers:0"
+            ],
+            "image": {
+                "id": 103,
+                "alt": "Application Calling Insl",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770822998/ieeeypsl/insl/Application%20Calling%20insl.jpg",
+                "cloudinaryPublicId": "ieeeypsl/insl/Application Calling insl",
+                "subfolder": null,
+                "updatedAt": "2026-02-11T15:16:39.495Z",
+                "createdAt": "2026-02-11T15:16:39.495Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770822998/ieeeypsl/insl/Application%20Calling%20insl.jpg",
+                "thumbnailURL": "/api/media/file/Application%20Calling%20insl-400x300.jpg",
+                "filename": "Application Calling insl.jpg",
+                "mimeType": "image/jpeg",
+                "filesize": 126880,
+                "width": 1024,
+                "height": 1024,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/Application Calling insl",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/Application Calling insl",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/Application Calling insl",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": "https://forms.gle/Y7nnsbsBbwg7T2Zk8",
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE #INSL2025 #YPSL #InnovationNationSriLanka #EmpowerTheFuture",
+            "updatedAt": "2026-02-11T15:17:06.909Z",
+            "createdAt": "2026-02-11T15:17:06.909Z",
+            "_status": "published"
+        },
+        {
+            "id": 19,
+            "effectiveEndDate": null,
+            "title": "Innovation Nation Provincial Workshop 1",
+            "slug": "insl-provincial-workshop-1",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "How to Find an Investable Business Idea",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Unlock the secrets to identifying business ideas that attract investors! Join us for Provincial Workshop 01, titled “How to Find an Investable Business Idea”, an insightful session from IEEE Innovation Nation Sri Lanka.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "This exclusive hybrid workshop will be conducted by Mr. Rajendra Theagaraja, Chairman Emeritus of Engenuity AI, a seasoned industry leader with years of experience in entrepreneurship and innovation. With his expert insights, you’ll learn how to recognize high-potential opportunities, validate business ideas, and shape them into ventures worth investing in.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "📅 Date: 3rd May 2025",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "type": "linebreak",
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "🕘 Time: 9:30 AM",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "type": "linebreak",
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "🌐 Mode: Hybrid (Online & In-person)",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Whether you are an aspiring entrepreneur, a student, or a startup founder seeking direction, this workshop is your chance to gain valuable tools and strategies to elevate your business journey.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Don’t miss this opportunity to learn from a leading innovator and shape your next big idea!",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": " ",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2025-05-03T11:30:00.000Z",
+            "endDate": null,
+            "startTime": "2026-02-11T04:00:00.000Z",
+            "endTime": "2026-02-11T17:00:00.000Z",
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "hybrid",
+            "venueLocation": null,
+            "onlinePlatform": null,
+            "organizers": [
+                "$5:props:children:props:children:1:props:initialEvents:3:organizers:0"
+            ],
+            "image": {
+                "id": 100,
+                "alt": "Provincial Workshop 1",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770822141/ieeeypsl/insl/provincial-workshop-1.jpg",
+                "cloudinaryPublicId": "ieeeypsl/insl/provincial-workshop-1",
+                "subfolder": null,
+                "updatedAt": "2026-02-11T15:02:21.663Z",
+                "createdAt": "2026-02-11T15:02:21.663Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770822141/ieeeypsl/insl/provincial-workshop-1.jpg",
+                "thumbnailURL": "/api/media/file/provincial-workshop-1-400x300.jpg",
+                "filename": "provincial-workshop-1.jpg",
+                "mimeType": "image/jpeg",
+                "filesize": 736555,
+                "width": 1024,
+                "height": 1024,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/provincial-workshop-1",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/provincial-workshop-1",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/provincial-workshop-1",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": null,
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE #INSL2025 #YPSL #InnovationNationSriLanka #EmpowerTheFuture",
+            "updatedAt": "2026-02-11T15:02:26.707Z",
+            "createdAt": "2026-02-11T15:00:33.424Z",
+            "_status": "published"
+        },
+        {
+            "id": 18,
+            "effectiveEndDate": null,
+            "title": "Innovation Nation Provincial Workshop 2 ",
+            "slug": "insl-provincial-workshop-2",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "How to Convert Your Business Idea into a Pitch Deck",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Turning a business idea into a compelling pitch deck is a crucial step in securing funding and gaining stakeholder interest. Provincial Workshop 02, titled “How to Convert Your Business Idea into a Pitch Deck”, is a high-impact hybrid session designed to help aspiring entrepreneurs and innovators effectively communicate their vision.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "This workshop will be led by Mr. Heminda Jayaweera, Executive Director at TRACE Sri Lanka, a prominent figure in the startup ecosystem with a wealth of experience in guiding founders through the early stages of venture building. In this session, he will share expert insights into structuring an impactful pitch, highlighting investor-relevant metrics, and storytelling techniques to captivate your audience.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "📅 Date: 3rd May 2025",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "type": "linebreak",
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "🕚 Time: 11:00 AM",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                },
+                                {
+                                    "type": "linebreak",
+                                    "version": 1
+                                },
+                                {
+                                    "mode": "normal",
+                                    "text": "🌐 Platform: Hybrid (Online & In-person)",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Whether you’re preparing for your first investor meeting or refining your existing pitch, this workshop will equip you with the tools and confidence to deliver a pitch deck that resonates.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Join us and take a step closer to securing your dream investment!",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2025-05-03T11:30:00.000Z",
+            "endDate": null,
+            "startTime": "2026-02-11T05:30:00.000Z",
+            "endTime": null,
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "hybrid",
+            "venueLocation": null,
+            "onlinePlatform": null,
+            "organizers": [
+                "$5:props:children:props:children:1:props:initialEvents:3:organizers:0"
+            ],
+            "image": {
+                "id": 99,
+                "alt": "Provincial Workshop 2",
+                "category": "insl",
+                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770821923/ieeeypsl/insl/provincial-workshop-2.jpg",
+                "cloudinaryPublicId": "ieeeypsl/insl/provincial-workshop-2",
+                "subfolder": null,
+                "updatedAt": "2026-02-11T14:58:44.861Z",
+                "createdAt": "2026-02-11T14:58:44.861Z",
+                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1770821923/ieeeypsl/insl/provincial-workshop-2.jpg",
+                "thumbnailURL": "/api/media/file/provincial-workshop-2-400x300.jpg",
+                "filename": "provincial-workshop-2.jpeg",
+                "mimeType": "image/jpeg",
+                "filesize": 312837,
+                "width": 1280,
+                "height": 1280,
+                "focalX": 50,
+                "focalY": 50,
+                "sizes": {
+                    "thumbnail": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/provincial-workshop-2",
+                        "width": 400,
+                        "height": 300
+                    },
+                    "card": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/provincial-workshop-2",
+                        "width": 768,
+                        "height": 1024
+                    },
+                    "tablet": {
+                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/provincial-workshop-2",
+                        "width": 1024
+                    }
+                }
+            },
+            "registrationUrl": null,
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": null,
+            "updatedAt": "2026-02-11T15:00:08.828Z",
+            "createdAt": "2026-02-11T14:59:21.695Z",
+            "_status": "published"
+        }
+    ]
+}
