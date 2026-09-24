@@ -94,10 +94,9 @@ export default function ContactSection({ isHero = false }: { isHero?: boolean })
                 <div className="flex flex-col pt-1">
                   <span className="text-[#d7cff9]/60 text-xs font-bold tracking-widest uppercase mb-2">Follow Us</span>
                   <div className="flex gap-4">
-                    <a href="#" className="text-white hover:text-[#bc71ff] transition-colors text-sm font-light">Facebook</a>
-                    <a href="#" className="text-white hover:text-[#bc71ff] transition-colors text-sm font-light">LinkedIn</a>
-                    <a href="#" className="text-white hover:text-[#bc71ff] transition-colors text-sm font-light">Instagram</a>
-                  </div>
+                    <a href="https://www.facebook.com/IEEEINSL/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#bc71ff] transition-colors text-sm font-light">Facebook</a>
+                    <a href="https://www.linkedin.com/company/ieeeinsl/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#bc71ff] transition-colors text-sm font-light">LinkedIn</a>
+                    </div>
                 </div>
               </div>
             </div>
