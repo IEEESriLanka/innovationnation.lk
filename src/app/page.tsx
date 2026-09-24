@@ -144,7 +144,7 @@ export default function Home() {
       <Header activePage="home" />
 
       {/* Hero Section */}
-      <section className="relative w-full h-screen flex flex-col justify-end pb-32 md:pb-48 lg:pb-56 px-6 md:px-16 lg:px-24 overflow-hidden">
+      <section className="relative w-full h-[100dvh] md:h-screen flex flex-col justify-center md:justify-end pb-0 md:pb-48 lg:pb-56 px-8 sm:px-12 md:px-16 lg:px-24 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full">
           <Image
@@ -167,15 +167,35 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col w-full text-white font-black uppercase tracking-tighter text-left"
+            className="flex flex-col w-full text-white font-black uppercase tracking-tighter text-center md:text-left"
           >
-            <span className="text-[12vw] md:text-[10vw] lg:text-[9vw] leading-[0.85]">
+            <span className="text-[13vw] sm:text-[11vw] md:text-[9vw] lg:text-[8vw] leading-[1.1] md:leading-[0.95] drop-shadow-2xl [-webkit-text-stroke:1px_currentColor] md:[-webkit-text-stroke:2px_currentColor]">
               INNOVATION NATION
             </span>
-            <span className="text-[12vw] md:text-[10vw] lg:text-[9vw] leading-[0.85] text-[#e9c7ff]">
+            <span className="text-[8vw] sm:text-[7vw] md:text-[6vw] lg:text-[5vw] leading-[1.1] md:leading-[0.95] text-[#e9c7ff] drop-shadow-2xl [-webkit-text-stroke:1px_currentColor] md:[-webkit-text-stroke:2px_currentColor]">
               SRI LANKA 2026
             </span>
           </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-8 w-full"
+          >
+            <Link 
+              href="/events" 
+              className="w-full sm:w-auto px-8 py-4 bg-[#bc71ff] hover:bg-[#a55deb] text-white rounded-full font-bold uppercase tracking-widest text-sm md:text-base text-center transition-all shadow-[0_0_20px_rgba(188,113,255,0.3)] hover:shadow-[0_0_30px_rgba(188,113,255,0.5)]"
+            >
+              See Events
+            </Link>
+            <Link 
+              href="/about-us" 
+              className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-gray-100 text-[#bc71ff] rounded-full font-bold uppercase tracking-widest text-sm md:text-base text-center transition-all shadow-lg hover:shadow-xl"
+            >
+              About Us
+            </Link>
+          </motion.div>
         </div>
       </section>
 
