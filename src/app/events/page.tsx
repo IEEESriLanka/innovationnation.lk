@@ -98,7 +98,7 @@ export default function EventsPage() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: idx * 0.1 }}
-                    className="flex flex-col bg-gradient-to-br from-[#150d2c] to-[#150d2c]/50 rounded-[2rem] border border-white/5 hover:border-[#bc71ff]/30 overflow-hidden group transition-all duration-300 hover:shadow-[0_10px_40px_rgba(188,113,255,0.1)]"
+                    className="flex flex-col bg-gradient-to-br from-[#150d2c] to-[#150d2c]/50 rounded-[2rem] border border-white/5 hover:border-[#bc71ff]/30 overflow-hidden group transition-all duration-300 "
                   >
                     <Link href={`/events/${ev.slug}`} className="relative w-full h-64 overflow-hidden bg-[#0c0325] block">
                       {ev.image?.url ? (

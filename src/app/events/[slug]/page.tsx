@@ -141,7 +141,7 @@ export default async function EventDetail({ params }: { params: Promise<{ slug: 
                     href={event.registrationUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex shrink-0 items-center justify-center gap-2 py-4 px-8 rounded-full text-sm font-bold uppercase tracking-widest transition-all bg-[#bc71ff] hover:bg-[#a55deb] text-white shadow-[0_0_20px_rgba(188,113,255,0.4)] hover:shadow-[0_0_30px_rgba(188,113,255,0.6)]"
+                    className="inline-flex shrink-0 items-center justify-center gap-2 py-4 px-8 rounded-full text-sm font-bold uppercase tracking-widest transition-all bg-[#bc71ff] hover:bg-[#a55deb] text-white shadow-[0_0_20px_rgba(188,113,255,0.4)] "
                   >
                     Register Now
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

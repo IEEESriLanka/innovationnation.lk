@@ -394,12 +394,12 @@ export default function Home() {
                 className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-10 group relative pb-10 last:pb-0"
               >
                 {/* Number indicator */}
-                <div className="relative z-10 w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-full bg-[#0c0325] border-2 border-[#4b32a8] group-hover:border-[#bc71ff] flex items-center justify-center text-lg md:text-xl font-bold text-[#4b32a8] group-hover:text-[#bc71ff] transition-all duration-300 shadow-[0_0_15px_rgba(75,50,168,0.2)] group-hover:shadow-[0_0_25px_rgba(188,113,255,0.4)]">
+                <div className="relative z-10 w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-full bg-[#0c0325] border-2 border-[#4b32a8] group-hover:border-[#bc71ff] flex items-center justify-center text-lg md:text-xl font-bold text-[#4b32a8] group-hover:text-[#bc71ff] transition-all duration-300 shadow-[0_0_15px_rgba(75,50,168,0.2)] ">
                   {String(idx + 1).padStart(2, "0")}
                 </div>
 
                 {/* Content Card */}
-                <div className="flex flex-col flex-1 bg-gradient-to-r from-[#1a103c]/60 to-transparent p-6 md:p-8 rounded-2xl border border-white/5 group-hover:border-[#bc71ff]/30 transition-all duration-300 backdrop-blur-sm shadow-xl hover:shadow-[0_10px_40px_rgba(188,113,255,0.1)] ml-4 sm:ml-0">
+                <div className="flex flex-col flex-1 bg-gradient-to-r from-[#1a103c]/60 to-transparent p-6 md:p-8 rounded-2xl border border-white/5 group-hover:border-[#bc71ff]/30 transition-all duration-300 backdrop-blur-sm shadow-xl ml-4 sm:ml-0">
                   <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 mb-4">
                     <h3 className="text-xl md:text-2xl font-semibold text-white">{step.title}</h3>
                     <span className="inline-flex items-center justify-center bg-[#bc71ff]/10 text-[#e9c7ff] text-xs md:text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-[#bc71ff]/30 whitespace-nowrap self-start xl:self-auto shadow-[inset_0_0_10px_rgba(188,113,255,0.1)]">
@@ -464,7 +464,7 @@ export default function Home() {
             </div>
             <Link
               href="/events"
-              className="group flex items-center gap-3 bg-[#150d2c] hover:bg-[#1a103c] border border-[#bc71ff]/30 hover:border-[#bc71ff] px-6 py-3 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(188,113,255,0.1)] hover:shadow-[0_0_25px_rgba(188,113,255,0.3)] shrink-0"
+              className="group flex items-center gap-3 bg-[#150d2c] hover:bg-[#1a103c] border border-[#bc71ff]/30 hover:border-[#bc71ff] px-6 py-3 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(188,113,255,0.1)] shrink-0"
             >
               <span className="text-[#e9c7ff] text-sm font-medium tracking-wide uppercase">Browse All</span>
               <svg className="w-4 h-4 text-[#bc71ff] group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -531,7 +531,7 @@ export default function Home() {
             </div>
             <Link
               href="/glimpse-of-insl"
-              className="group flex items-center gap-3 bg-[#150d2c] hover:bg-[#1a103c] border border-[#bc71ff]/30 hover:border-[#bc71ff] px-6 py-3 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(188,113,255,0.1)] hover:shadow-[0_0_25px_rgba(188,113,255,0.3)] shrink-0"
+              className="group flex items-center gap-3 bg-[#150d2c] hover:bg-[#1a103c] border border-[#bc71ff]/30 hover:border-[#bc71ff] px-6 py-3 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(188,113,255,0.1)] shrink-0"
             >
               <span className="text-[#e9c7ff] text-sm font-medium tracking-wide uppercase">Browse All</span>
               <svg className="w-4 h-4 text-[#bc71ff] group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
