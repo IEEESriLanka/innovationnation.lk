@@ -36,6 +36,7 @@ export default function Header({ activePage }: { activePage: string }) {
           <Link href="/partners" className={`${getLinkClass("partners")} transition-colors`}>Partners</Link>
           <Link href="/team" className={`${getLinkClass("team")} transition-colors`}>Our Team</Link>
           <Link href="/glimpse-of-insl" className={`${getLinkClass("glimpse")} transition-colors`}>Glimpse of INSL</Link>
+          <Link href="/contact-us" className={`${getLinkClass("contact")} transition-colors`}>Contact Us</Link>
         </nav>
 
         {/* Mobile Hamburger Button */}
@@ -75,6 +76,7 @@ export default function Header({ activePage }: { activePage: string }) {
               <Link href="/partners" onClick={() => setIsOpen(false)} className={`${getMobileLinkClass("partners")} transition-colors`}>Partners</Link>
               <Link href="/team" onClick={() => setIsOpen(false)} className={`${getMobileLinkClass("team")} transition-colors`}>Team</Link>
               <Link href="/glimpse-of-insl" onClick={() => setIsOpen(false)} className={`${getMobileLinkClass("glimpse")} transition-colors`}>Glimpse of INSL</Link>
+              <Link href="/contact-us" onClick={() => setIsOpen(false)} className={`${getMobileLinkClass("contact")} transition-colors`}>Contact Us</Link>
             </nav>
             <div className="absolute bottom-10 left-0 w-full flex justify-center">
               <div className="w-12 h-1 bg-gradient-to-r from-[#4b32a8] to-[#bc71ff] rounded-full"></div>
