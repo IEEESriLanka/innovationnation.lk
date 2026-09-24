@@ -9,15 +9,30 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+function extractText(node: any): string {
+  if (!node) return "";
+  if (node.type === "text") return node.text || "";
+  if (node.children) return node.children.map(extractText).join(" ");
+  return "";
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const event = (eventData.initialEvents || []).find((ev: any) => ev.slug === slug);
+  const event: any = (eventData.initialEvents || []).find((ev: any) => ev.slug === slug);
   
   if (!event) {
     return { title: "Event Not Found" };
   }
 
-  const desc = event.excerpt || (event.description ? event.description.substring(0, 160) : "Join this event at IEEE Innovation Nation Sri Lanka 2026.");
+  let desc = "Join this event at IEEE Innovation Nation Sri Lanka 2026.";
+  if (event.excerpt) {
+    desc = event.excerpt;
+  } else if (event.description?.root) {
+    const extracted = extractText(event.description.root).trim().replace(/\s+/g, ' ');
+    if (extracted) {
+      desc = extracted.substring(0, 160) + (extracted.length > 160 ? "..." : "");
+    }
+  }
   
   return {
     title: event.title,
