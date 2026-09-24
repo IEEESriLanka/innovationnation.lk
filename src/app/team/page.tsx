@@ -16,6 +16,15 @@ const teamMembers = [
     imagePosition: 'center 20%',
   },
   {
+    name: 'Sanugi Wickramasinghe',
+    role: 'Secretary',
+    organization: 'IEEE Innovation Nation Sri Lanka 2026',
+    phone: '(+94) 71 654 2724',
+    email: 'sanugidwickramasinghe@gmail.com',
+    image: '/sanugi.png',
+    imagePosition: 'center 20%',
+  },
+  {
     name: 'Shafkhan Mohammed',
     role: 'Vice Chair - Program',
     organization: 'IEEE Innovation Nation Sri Lanka 2026',
@@ -24,15 +33,7 @@ const teamMembers = [
     image: '/shafkan.png',
     imagePosition: 'center 15%',
   },
-  {
-    name: 'Sanugi Wickramasinghe',
-    role: 'Vice Chair - Secretary Team',
-    organization: 'IEEE Innovation Nation Sri Lanka 2026',
-    phone: '(+94) 71 654 2724',
-    email: 'sanugidwickramasinghe@gmail.com',
-    image: '/sanugi.png',
-    imagePosition: 'center 20%',
-  },
+
   {
     name: 'Tiromi Gunarathne',
     role: 'Vice Chair - Finance Team',
@@ -72,14 +73,14 @@ export default function Team() {
           </div>
 
           {/* Hasidu - Top Center */}
-          <div className="flex justify-center mb-12 lg:mb-16">
+          <div className="flex justify-center w-full mb-8 lg:mb-12">
             <motion.div
               key={teamMembers[0].name}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.2)] bg-[#1a1a24] w-full md:w-80 lg:w-96 max-w-sm"
+              className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.2)] bg-[#1a1a24] w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(25%-1.125rem)]"
             >
               {/* Image Top Half */}
               <div className="relative w-full aspect-[4/3] bg-[#0c0325]">
@@ -93,16 +94,16 @@ export default function Team() {
               </div>
 
               {/* Content Bottom Half */}
-              <div className="p-8 md:p-10 bg-[#1f1f2e] flex flex-col flex-1 border-t-2 border-[#bc71ff]/50">
-                <h3 className="text-xl md:text-2xl font-semibold text-white mb-1">{teamMembers[0].name}</h3>
-                <p className="text-[#d7cff9] text-sm mb-6 font-medium">{teamMembers[0].role}</p>
+              <div className="p-6 xl:p-8 bg-[#1f1f2e] flex flex-col flex-1 border-t-2 border-[#bc71ff]/50">
+                <h3 className="text-lg xl:text-xl font-semibold text-white mb-1">{teamMembers[0].name}</h3>
+                <p className="text-[#d7cff9] text-xs xl:text-sm mb-4 font-medium">{teamMembers[0].role}</p>
 
-                <p className="text-white/70 text-sm font-light mb-6 flex-1">
+                <p className="text-white/70 text-xs xl:text-sm font-light mb-4 flex-1">
                   {teamMembers[0].organization}
                 </p>
 
-                <div className="flex flex-col gap-2 text-sm text-white/50 font-light mt-auto">
-                  <span>{teamMembers[0].email}</span>
+                <div className="flex flex-col gap-1 text-[11px] xl:text-xs text-white/50 font-light mt-auto">
+                  <span className="truncate" title={teamMembers[0].email}>{teamMembers[0].email}</span>
                   <span>{teamMembers[0].phone}</span>
                 </div>
               </div>
@@ -110,7 +111,7 @@ export default function Team() {
           </div>
 
           {/* Rest of the team - 4 in a row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl mx-auto">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-6 w-full max-w-7xl mx-auto">
             {teamMembers.slice(1).map((member, idx) => (
               <motion.div
                 key={member.name}
@@ -118,7 +119,7 @@ export default function Team() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: (idx + 1) * 0.1 }}
-                className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.2)] bg-[#1a1a24] w-full"
+                className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.2)] bg-[#1a1a24] w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(25%-1.125rem)]"
               >
                 {/* Image Top Half */}
                 <div className="relative w-full aspect-[4/3] bg-[#0c0325]">
@@ -183,7 +184,7 @@ export default function Team() {
 
             <div className="flex flex-col gap-5">
               <h4 className="text-white font-bold tracking-[0.2em] uppercase text-xs mb-2">Connect</h4>
-              <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Contact Us</a>
+              <Link href="/contact-us" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Contact Us</Link>
               <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Facebook</a>
               <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">LinkedIn</a>
               <a href="#" className="text-[#d7cff9]/60 hover:text-[#bc71ff] transition-colors text-sm font-light">Instagram</a>
