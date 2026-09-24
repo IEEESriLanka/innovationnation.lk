@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from "@/components/Header";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description: "Learn more about IEEE Innovation Nation Sri Lanka 2026, our vision, mission, and the impact we make in the startup ecosystem.",
+};
 
 export default function AboutUs() {
   return (

@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from "@/components/Header";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Partners",
+  description: "Meet the official partners and sponsors who are making IEEE Innovation Nation Sri Lanka 2026 possible.",
+};
 
 export default function Partners() {
   const partnersData = [

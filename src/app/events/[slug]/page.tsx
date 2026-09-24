@@ -1,8 +1,34 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import eventData from "@/lib/events.json";
+
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const event = (eventData.initialEvents || []).find((ev: any) => ev.slug === slug);
+  
+  if (!event) {
+    return { title: "Event Not Found" };
+  }
+
+  const desc = event.excerpt || (event.description ? event.description.substring(0, 160) : "Join this event at IEEE Innovation Nation Sri Lanka 2026.");
+  
+  return {
+    title: event.title,
+    description: desc,
+    openGraph: {
+      title: event.title,
+      description: desc,
+      images: event.image?.url ? [event.image.url] : [],
+    },
+  };
+}
 
 export function generateStaticParams() {
   return (eventData.initialEvents || []).map((ev: any) => ({
