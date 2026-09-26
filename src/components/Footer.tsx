@@ -12,15 +12,29 @@ export default function Footer({ activePage }: { activePage?: string }) {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16 md:gap-8">
         
         {/* Brand/Logo Area */}
-        <div className="flex flex-col gap-6 max-w-sm">
-          <Image
-            src="/logo.png"
-            alt="INSL logo"
-            width={160}
-            height={56}
-            className="object-contain opacity-90"
-          />
-          <p className="text-[#d7cff9]/60 font-light text-sm leading-relaxed">
+        <div className="flex flex-col gap-6 max-w-lg">
+          <div className="flex items-center gap-8">
+            <Image
+              src="/logo.png"
+              alt="INSL logo"
+              width={100}
+              height={35}
+              className="object-contain opacity-90"
+            />
+            <div className="flex flex-col gap-1">
+              <span className="text-[#d7cff9]/80 font-light text-[10px] tracking-widest uppercase">
+                A national project of
+              </span>
+              <Image
+                src="/partners/organized-by.png"
+                alt="YPSL Logo"
+                width={240}
+                height={84}
+                className="object-contain opacity-90"
+              />
+            </div>
+          </div>
+          <p className="text-[#d7cff9]/60 font-light text-sm leading-relaxed max-w-sm">
             Empowering the next generation of Sri Lankan entrepreneurs. Join us in building a nation of innovation.
           </p>
         </div>

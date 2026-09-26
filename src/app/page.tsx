@@ -585,37 +585,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Organized By Section */}
-      <section className="relative w-full py-24 bg-[#150d2c]">
-        <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 flex flex-col items-center">
-          <div className="h-12 flex items-end mb-6">
-            <p className="text-[#bc71ff] text-xs md:text-sm uppercase tracking-widest text-center">
-              Organized By
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-8 md:gap-12 items-center justify-center w-full px-4">
-            <div className="relative w-48 sm:w-56 md:w-72 h-24 sm:h-28 md:h-32 opacity-80 hover:opacity-100 transition-opacity">
-              <Image
-                src="/partners/organized-by.png"
-                alt="Organized By"
-                fill
-                className="object-contain rounded-xl"
-                unoptimized
-              />
-            </div>
-            <div className="relative w-48 sm:w-56 md:w-72 h-24 sm:h-28 md:h-32 opacity-80 hover:opacity-100 transition-opacity">
-              <Image
-                src="/logo.png"
-                alt="INSL Logo"
-                fill
-                className="object-contain rounded-xl"
-                unoptimized
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
 
 
       {/* Contact Section */}
