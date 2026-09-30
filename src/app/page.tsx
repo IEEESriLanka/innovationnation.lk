@@ -562,7 +562,12 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
-            {[12, 7, 3, 11].map((imgNum, idx) => (
+            {[
+              "/past/2025/624708230_1557371086388041_7999270379826382386_n.jpg",
+              "/past/2025/624913826_1557371083054708_5204295995649973312_n.jpg",
+              "/past/2025/625170237_1557372443054572_2910114480869540702_n.jpg",
+              "/past/2025/625365977_1557371433054673_7724104276091939730_n.jpg"
+            ].map((imgSrc, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 30 }}
@@ -572,7 +577,7 @@ export default function Home() {
                 className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden group border border-white/5 shadow-lg bg-[#0c0325]"
               >
                 <Image
-                  src={`/slideshow/${imgNum}.jpg`}
+                  src={imgSrc}
                   alt={`Glimpse ${idx + 1}`}
                   fill
                   sizes="(max-width: 640px) 50vw, 25vw"
