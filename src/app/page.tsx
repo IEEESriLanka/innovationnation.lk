@@ -183,14 +183,14 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-8 w-full"
           >
-            <Link 
-              href="/events" 
+            <Link
+              href="/events"
               className="w-full sm:w-auto px-8 py-4 bg-[#bc71ff] hover:bg-[#a55deb] text-white rounded-full font-bold uppercase tracking-widest text-sm md:text-base text-center transition-all shadow-[0_0_20px_rgba(188,113,255,0.3)] hover:shadow-[0_0_30px_rgba(188,113,255,0.5)]"
             >
               See Events
             </Link>
-            <Link 
-              href="/about-us" 
+            <Link
+              href="/about-us"
               className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-gray-100 text-[#bc71ff] rounded-full font-bold uppercase tracking-widest text-sm md:text-base text-center transition-all shadow-lg hover:shadow-xl"
             >
               About Us
@@ -538,6 +538,76 @@ export default function Home() {
         </div>
       </section>
 
+      {/* INSL Workshops Section */}
+      <section className="relative w-full py-24 px-6 md:px-16 lg:px-24 bg-[#0c0325] overflow-hidden border-t border-white/5">
+        <div className="max-w-7xl mx-auto flex flex-col items-center">
+          <div className="flex flex-col md:flex-row w-full justify-between items-end mb-12 gap-6">
+            <div>
+              <h2 className="text-3xl md:text-5xl font-semibold text-white mb-4">
+                INSL <span className="text-[#bc71ff]">Workshops</span>
+              </h2>
+              <p className="text-white/60 font-light max-w-lg">
+                Catch up on our past workshop sessions and gain insights from industry experts.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+            <motion.a
+              href="https://youtu.be/6ElQHjkp5Ag"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="relative w-full aspect-video rounded-3xl overflow-hidden group border border-white/5 shadow-lg bg-[#150d2c] flex flex-col items-center justify-center cursor-pointer"
+            >
+              <Image
+                src="/recordings/workshop-1.png"
+                alt="Workshop 1"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-[#0c0325]/30 group-hover:bg-[#0c0325]/10 transition-colors duration-300" />
+
+              {/* Play Button Icon */}
+              <div className="absolute w-16 h-16 bg-[#bc71ff]/90 text-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(188,113,255,0.4)] group-hover:scale-110 group-hover:bg-[#a55deb] transition-all duration-300">
+                <svg className="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://youtu.be/tbM3EaT79iY"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="relative w-full aspect-video rounded-3xl overflow-hidden group border border-white/5 shadow-lg bg-[#150d2c] flex flex-col items-center justify-center cursor-pointer"
+            >
+              <Image
+                src="/recordings/workshop-2.png"
+                alt="Workshop 2"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-[#0c0325]/30 group-hover:bg-[#0c0325]/10 transition-colors duration-300" />
+
+              {/* Play Button Icon */}
+              <div className="absolute w-16 h-16 bg-[#bc71ff]/90 text-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(188,113,255,0.4)] group-hover:scale-110 group-hover:bg-[#a55deb] transition-all duration-300">
+                <svg className="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </motion.a>
+          </div>
+        </div>
+      </section>
+
       {/* Glimpse of INSL Preview Section */}
       <section className="relative w-full py-24 px-6 md:px-16 lg:px-24 bg-[#0c0325] overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col items-center">
@@ -562,7 +632,12 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
-            {[12, 7, 3, 11].map((imgNum, idx) => (
+            {[
+              "/past/2025/624708230_1557371086388041_7999270379826382386_n.jpg",
+              "/past/2025/624913826_1557371083054708_5204295995649973312_n.jpg",
+              "/past/2025/625170237_1557372443054572_2910114480869540702_n.jpg",
+              "/past/2025/625365977_1557371433054673_7724104276091939730_n.jpg"
+            ].map((imgSrc, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 30 }}
@@ -572,7 +647,7 @@ export default function Home() {
                 className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden group border border-white/5 shadow-lg bg-[#0c0325]"
               >
                 <Image
-                  src={`/slideshow/${imgNum}.jpg`}
+                  src={imgSrc}
                   alt={`Glimpse ${idx + 1}`}
                   fill
                   sizes="(max-width: 640px) 50vw, 25vw"
