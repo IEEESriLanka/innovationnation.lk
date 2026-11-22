@@ -10,11 +10,39 @@ export const metadata: Metadata = {
 };
 
 export default function Partners() {
-  const partnersData = [
-    { files: ['investment-partner.png'], title: 'Official Investment Partner', bgWhite: true },
-    { files: ['knowledge-partner.png'], title: 'Exclusive Knowledge Partner' },
-    { files: ['official-digital-media-partner.png'], title: 'Official Digital Media Partner' },
-    { files: ['regional-partner-1.png', 'regional-partner-2.png', 'regional-partner-3.png'], title: 'Regional Partners' }
+  const partnersData: { title: string; logos: { file: string; name: string }[] }[] = [
+    { title: 'Organized By', logos: [{ file: 'ypsl.png', name: 'IEEE Young Professionals Sri Lanka' }] },
+    { title: 'Chapter Collaboration', logos: [{ file: 'mtt-s.png', name: 'IEEE MTT-S' }] },
+    { title: 'Associate Partner', logos: [{ file: 'kanli.png', name: 'KANLI' }] },
+    { title: 'Leisure Partner', logos: [{ file: 'pearl-bay.png', name: 'Pearl Bay' }] },
+    { title: 'Investment Partner', logos: [{ file: 'lankan-angel-network.png', name: 'Lankan Angel Network' }] },
+    { title: 'Knowledge and Innovation Partner', logos: [{ file: 'slasscom.png', name: 'SLASSCOM' }] },
+    { title: 'Knowledge Partner', logos: [{ file: 'generation-alpha.png', name: 'Generation Alpha' }] },
+    {
+      title: 'Ecosystem Partners',
+      logos: [
+        { file: 'gew-sri-lanka.png', name: 'Global Entrepreneurship Week Sri Lanka' },
+        { file: 'trace.png', name: 'TRACE' },
+        { file: 'angelx.png', name: 'AngelX' },
+      ],
+    },
+    { title: 'Community Partner', logos: [{ file: 'startup-grind-colombo.png', name: 'Startup Grind Colombo' }] },
+    { title: 'Digital Media Partner', logos: [{ file: 'startup-sri-lanka.png', name: 'Startup Sri Lanka' }] },
+    {
+      title: 'Digital Outreach Partners',
+      logos: [
+        { file: 'vyapara.png', name: 'Vyapara' },
+        { file: 'youngthare.png', name: 'Youngthare' },
+      ],
+    },
+    {
+      title: 'Regional Partners',
+      logos: [
+        { file: 'central-startup-hub.png', name: 'Central Startup Hub' },
+        { file: 'uva-startup-hub.png', name: 'Uva Startup Hub' },
+        { file: 'wayamba-startup-hub.png', name: 'Wayamba Startup Hub' },
+      ],
+    },
   ];
 
   return (
@@ -32,26 +60,32 @@ export default function Partners() {
             We are proud to collaborate with industry leaders and organizations who share our vision of empowering the next generation of innovators.
           </p>
 
-          <div className="w-full flex flex-col gap-24">
-            {partnersData.map((partnerGroup, idx) => (
-              <div key={idx} className="flex flex-col items-center">
-                <div className="mb-12 flex flex-col items-center">
+          <div className="w-full flex flex-wrap justify-center gap-x-12 gap-y-16">
+            {partnersData.map((group) => (
+              <div key={group.title} className="flex flex-col items-center">
+                <div className="mb-6 flex flex-col items-center">
                   <p className="text-[#bc71ff] text-sm md:text-base uppercase tracking-widest text-center font-bold">
-                    {partnerGroup.title}
+                    {group.title}
                   </p>
                   <div className="w-16 h-px bg-[#bc71ff]/50 mt-4" />
                 </div>
 
-                <div className="flex gap-12 md:gap-16 items-center justify-center flex-wrap">
-                  {partnerGroup.files.map((file, fileIdx) => (
-                    <div key={fileIdx} className={`relative w-48 md:w-64 h-24 opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-300 ${partnerGroup.bgWhite ? 'bg-white rounded-2xl p-6 shadow-[0_0_30px_rgba(188,113,255,0.15)]' : ''}`}>
-                      <Image
-                        src={`/partners/${file}`}
-                        alt={`${partnerGroup.title} ${fileIdx + 1}`}
-                        fill
-                        className="object-contain rounded-2xl"
-                        unoptimized
-                      />
+                <div className="flex gap-6 items-center justify-center flex-wrap">
+                  {group.logos.map((logo) => (
+                    <div
+                      key={logo.file}
+                      className="relative w-48 md:w-56 h-28 bg-white rounded-2xl p-4 shadow-[0_0_30px_rgba(188,113,255,0.15)] hover:scale-105 transition-transform duration-300"
+                    >
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={`/partners/${logo.file}`}
+                          alt={logo.name}
+                          fill
+                          sizes="224px"
+                          className="object-contain"
+                          unoptimized
+                        />
+                      </div>
                     </div>
                   ))}
                 </div>
