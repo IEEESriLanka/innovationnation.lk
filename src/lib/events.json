@@ -1,6 +1,492 @@
 {
     "initialEvents": [
         {
+            "id": 117,
+            "effectiveEndDate": "2026-10-25T23:59:59.999Z",
+            "title": "Workshop 04: Go-To-Market Strategy",
+            "slug": "insl-workshop-4",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Workshop 04: Go-To-Market Strategy",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Workshop 04 of IEEE Innovation Nation Sri Lanka 2026 focuses on how to take your product to market and reach your first customers.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Led by Mr. Usman Khan, Marketing & GTM Strategist, Growth Leader and Tech Entrepreneur.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Date: 25th October 2026",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Time: 7:00 PM onwards",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Platform: Zoom",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Join us to learn how to launch with confidence and grow your venture. 🚀",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2026-10-25T11:30:00.000Z",
+            "endDate": null,
+            "startTime": null,
+            "endTime": null,
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "online",
+            "venueLocation": null,
+            "onlinePlatform": "zoom",
+            "organizers": [],
+            "image": {
+                "alt": "Workshop 04: Go-To-Market Strategy",
+                "url": "/events/insl-2026-workshop-4.jpeg",
+                "filename": "insl-2026-workshop-4.jpeg",
+                "mimeType": "image/jpeg",
+                "width": 1024,
+                "height": 1280
+            },
+            "registrationUrl": null,
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE #IEEEYP #IEEESL #IEEEYPSL #INSL2026",
+            "updatedAt": "2026-11-22T00:00:00.000Z",
+            "createdAt": "2026-11-22T00:00:00.000Z",
+            "_status": "published"
+        },
+        {
+            "id": 116,
+            "effectiveEndDate": "2026-10-11T23:59:59.999Z",
+            "title": "Workshop 03: Build the Business",
+            "slug": "insl-workshop-3",
+            "project": "insl",
+            "description": {
+                "root": {
+                    "type": "root",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Workshop 03: Build the Business",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Workshop 03 of IEEE Innovation Nation Sri Lanka 2026 focuses on turning an innovative idea into a viable business.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Led by Ms. Mahendri Hemachandra, Education Lead and Training & Capacity Building Coordinator at Generation Alpha.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Date: 11th October 2026",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Time: 7:30 PM onwards",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Platform: Zoom",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                                {
+                                    "mode": "normal",
+                                    "text": "Join us to take the next step in building your venture. 🏗️",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                }
+                            ],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        },
+                        {
+                            "type": "paragraph",
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [],
+                            "direction": null,
+                            "textStyle": "",
+                            "textFormat": 0
+                        }
+                    ],
+                    "direction": null
+                }
+            },
+            "startDate": "2026-10-11T11:30:00.000Z",
+            "endDate": null,
+            "startTime": null,
+            "endTime": null,
+            "isMultipleDates": false,
+            "multipleDates": [],
+            "timezone": "Asia/Colombo",
+            "eventType": "online",
+            "venueLocation": null,
+            "onlinePlatform": "zoom",
+            "organizers": [],
+            "image": {
+                "alt": "Workshop 03: Build the Business",
+                "url": "/events/insl-2026-workshop-3.jpeg",
+                "filename": "insl-2026-workshop-3.jpeg",
+                "mimeType": "image/jpeg",
+                "width": 1024,
+                "height": 1280
+            },
+            "registrationUrl": null,
+            "registrationType": "free",
+            "registrationButtonText": null,
+            "secondaryCTAText": null,
+            "secondaryCTALink": null,
+            "ticketing": [],
+            "bankDetails": "Bank: Bank of Ceylon\nBranch: Torrington Square\nAccount Name: IEEE Young Professionals Sri Lanka\nAccount Number: 0008479203",
+            "registrationFormMode": "standard",
+            "useCustomFieldsOnly": false,
+            "customRegistrationFields": [],
+            "discountCodes": [],
+            "availability": "available",
+            "hashtags": "#IEEE #IEEEYP #IEEESL #IEEEYPSL #INSL2026",
+            "updatedAt": "2026-11-22T00:00:00.000Z",
+            "createdAt": "2026-11-22T00:00:00.000Z",
+            "_status": "published"
+        },
+        {
             "id": 115,
             "effectiveEndDate": "2026-09-17T23:59:59.999Z",
             "title": "Workshop 02: Mastering Unit Economics",
@@ -81,7 +567,7 @@
                             "children": [
                                 {
                                     "mode": "normal",
-                                    "text": "Led by Mr. Chaminda Amarasekera, Director of Synergy by Y & C, the session will cover practical concepts including pricing, costs, profit margins, and unit economics, helping participants evaluate the financial potential of their ideas.",
+                                    "text": "Led by Mr. Chaaminda Kumarasiri, Chairman/Principal Consultant of HCP Consulting, the session will cover practical concepts including pricing, costs, profit margins, and unit economics, helping participants evaluate the financial potential of their ideas.",
                                     "type": "text",
                                     "style": "",
                                     "detail": 0,
@@ -229,39 +715,12 @@
             "onlinePlatform": "zoom",
             "organizers": [],
             "image": {
-                "id": 783,
-                "alt": "INSL (2)",
-                "category": "insl",
-                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1789227408/ieeeypsl/insl/INSL%20%282%29.png",
-                "cloudinaryPublicId": "ieeeypsl/insl/INSL (2)",
-                "subfolder": null,
-                "updatedAt": "2026-09-12T15:36:49.481Z",
-                "createdAt": "2026-09-12T15:36:49.480Z",
-                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1789227408/ieeeypsl/insl/INSL%20%282%29.png",
-                "thumbnailURL": "/api/media/file/INSL%20(2)-400x300.png",
-                "filename": "INSL (2).png",
-                "mimeType": "image/png",
-                "filesize": 1465282,
-                "width": 1080,
-                "height": 1350,
-                "focalX": 50,
-                "focalY": 50,
-                "sizes": {
-                    "thumbnail": {
-                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/INSL (2)",
-                        "width": 400,
-                        "height": 300
-                    },
-                    "card": {
-                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/INSL (2)",
-                        "width": 768,
-                        "height": 1024
-                    },
-                    "tablet": {
-                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/INSL (2)",
-                        "width": 1024
-                    }
-                }
+                "alt": "INSL 2026 Workshop 02 - Mastering Unit Economics",
+                "url": "/events/insl-2026-workshop-2.jpeg",
+                "filename": "insl-2026-workshop-2.jpeg",
+                "mimeType": "image/jpeg",
+                "width": 1024,
+                "height": 1280
             },
             "registrationUrl": "https://forms.gle/z9fFvH6cG97AZpqe9",
             "registrationType": "free",
@@ -532,39 +991,12 @@
                 }
             ],
             "image": {
-                "id": 665,
-                "alt": "Ambassador   2026 08 26T105227.586",
-                "category": "insl",
-                "cloudinaryUrl": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1787721915/ieeeypsl/insl/Ambassador%20-%202026-08-26T105227.586.png",
-                "cloudinaryPublicId": "ieeeypsl/insl/Ambassador - 2026-08-26T105227.586",
-                "subfolder": null,
-                "updatedAt": "2026-08-26T05:25:16.288Z",
-                "createdAt": "2026-08-26T05:25:16.287Z",
-                "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/v1787721915/ieeeypsl/insl/Ambassador%20-%202026-08-26T105227.586.png",
-                "thumbnailURL": "/api/media/file/Ambassador%20-%202026-08-26T105227.586-400x300.png",
-                "filename": "Ambassador - 2026-08-26T105227.586.png",
-                "mimeType": "image/png",
-                "filesize": 1456594,
-                "width": 1080,
-                "height": 1350,
-                "focalX": 50,
-                "focalY": 50,
-                "sizes": {
-                    "thumbnail": {
-                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_400,h_300/ieeeypsl/insl/Ambassador - 2026-08-26T105227.586",
-                        "width": 400,
-                        "height": 300
-                    },
-                    "card": {
-                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_fill,w_768,h_1024/ieeeypsl/insl/Ambassador - 2026-08-26T105227.586",
-                        "width": 768,
-                        "height": 1024
-                    },
-                    "tablet": {
-                        "url": "https://res.cloudinary.com/dhx3jwszg/image/upload/c_limit,w_1024/ieeeypsl/insl/Ambassador - 2026-08-26T105227.586",
-                        "width": 1024
-                    }
-                }
+                "alt": "INSL 2026 Workshop 01 - How to Pitch to Investors Like a Pro",
+                "url": "/events/insl-2026-workshop-1.jpeg",
+                "filename": "insl-2026-workshop-1.jpeg",
+                "mimeType": "image/jpeg",
+                "width": 1024,
+                "height": 1280
             },
             "registrationUrl": "https://forms.gle/wZ2GsQHG1RwVNxKw7",
             "registrationType": "free",
