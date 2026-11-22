@@ -553,57 +553,39 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-            <motion.a
-              href="https://youtu.be/6ElQHjkp5Ag"
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="relative w-full aspect-video rounded-3xl overflow-hidden group border border-white/5 shadow-lg bg-[#150d2c] flex flex-col items-center justify-center cursor-pointer"
-            >
-              <Image
-                src="/recordings/workshop-1.png"
-                alt="Workshop 1"
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-[#0c0325]/30 group-hover:bg-[#0c0325]/10 transition-colors duration-300" />
+            {[
+              { url: "https://youtu.be/6ElQHjkp5Ag", img: "/recordings/workshop-1.png", title: "Workshop 01 | How to Pitch to Investors like a Pro" },
+              { url: "https://youtu.be/tbM3EaT79iY", img: "/recordings/workshop-2.png", title: "Workshop 02 | Mastering Unit Economics" },
+              { url: "https://youtu.be/0fwpeSGKp_s", img: "/recordings/workshop-3.jpg", title: "Workshop 03 | Build The Business" },
+              { url: "https://youtu.be/FfyAHESVg64", img: "/recordings/workshop-4.jpg", title: "Workshop 04 | Go-To-Market Strategy" },
+            ].map((workshop, idx) => (
+              <motion.a
+                key={workshop.url}
+                href={workshop.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: (idx % 2) * 0.1 }}
+                className="relative w-full aspect-video rounded-3xl overflow-hidden group border border-white/5 shadow-lg bg-[#150d2c] flex flex-col items-center justify-center cursor-pointer"
+              >
+                <Image
+                  src={workshop.img}
+                  alt={workshop.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-[#0c0325]/30 group-hover:bg-[#0c0325]/10 transition-colors duration-300" />
 
-              {/* Play Button Icon */}
-              <div className="absolute w-16 h-16 bg-[#bc71ff]/90 text-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(188,113,255,0.4)] group-hover:scale-110 group-hover:bg-[#a55deb] transition-all duration-300">
-                <svg className="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </motion.a>
-
-            <motion.a
-              href="https://youtu.be/tbM3EaT79iY"
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="relative w-full aspect-video rounded-3xl overflow-hidden group border border-white/5 shadow-lg bg-[#150d2c] flex flex-col items-center justify-center cursor-pointer"
-            >
-              <Image
-                src="/recordings/workshop-2.png"
-                alt="Workshop 2"
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-[#0c0325]/30 group-hover:bg-[#0c0325]/10 transition-colors duration-300" />
-
-              {/* Play Button Icon */}
-              <div className="absolute w-16 h-16 bg-[#bc71ff]/90 text-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(188,113,255,0.4)] group-hover:scale-110 group-hover:bg-[#a55deb] transition-all duration-300">
-                <svg className="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </motion.a>
+                {/* Play Button Icon */}
+                <div className="absolute w-16 h-16 bg-[#bc71ff]/90 text-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(188,113,255,0.4)] group-hover:scale-110 group-hover:bg-[#a55deb] transition-all duration-300">
+                  <svg className="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </motion.a>
+            ))}
           </div>
         </div>
       </section>
