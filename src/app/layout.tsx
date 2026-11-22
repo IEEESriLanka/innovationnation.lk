@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://insl.lk"),
   title: {
     default: "Innovation Nation Sri Lanka 2026 | IEEE INSL",
     template: "%s | INSL 2026",
